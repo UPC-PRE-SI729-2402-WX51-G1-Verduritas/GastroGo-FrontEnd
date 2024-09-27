@@ -20,7 +20,7 @@ export class SideNavigatorBarComponent {
   private router: Router = inject(Router);
 
   onNavigateHome() {
-
+    this.router.navigate(['home']).then();
   }
 
   onNavigateRestaurants() {
@@ -28,14 +28,17 @@ export class SideNavigatorBarComponent {
   }
 
   onNavigateOrders() {
+    this.router.navigate(['order']).then();
 
   }
 
   onNavigateTeamActivities() {
+    this.router.navigate(['role']).then();
 
   }
 
   onNavigateProfile() {
+    this.router.navigate(['profile']).then();
 
   }
 
