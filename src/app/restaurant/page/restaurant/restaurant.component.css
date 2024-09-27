@@ -1,0 +1,130 @@
+.profile-container {
+  display: flex;
+  flex-basis: content;
+  flex-direction: column;
+  padding: 80px;
+  align-items: stretch;
+}
+
+.profile-header {
+  background-color: #FF7338;
+  display: flex;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-header h2 {
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.component-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #FFCFBB;
+  padding: 30px;
+}
+.search-filters-container{
+  display: flex;
+  flex-direction: row;
+}
+/* Search and filters */
+.search-filters-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-autocomplete input {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.save-button {
+  background-color: #FF7338;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.save-button:hover {
+  background-color: #ff9d71;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-container label {
+  margin-bottom: 5px;
+}
+
+.select-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Restaurant cards */
+.Cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.restaurant-card {
+  background-color: #faeae7;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.restaurant-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.restaurant-info {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.restaurant-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #333;
+}
+
+.restaurant-address, .restaurant-schedule, .restaurant-rating {
+  margin: 5px 0;
+  color: #666;
+}
+
+.read-more-button {
+  background-color: #FF7338;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
