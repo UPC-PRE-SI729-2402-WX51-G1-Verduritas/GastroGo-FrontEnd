@@ -7,8 +7,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
   selector: 'app-profile',
   standalone: true,
   imports: [CommonModule, MatInputModule, MatButtonModule, MatCheckboxModule],
-  templateUrl: './profile.component.html',
-  styleUrl: './profile.component.css'
+  templateUrl: './my-profile.component.html',
+  styleUrl: './my-profile.component.css'
 })
 export class ProfileComponent {
 
