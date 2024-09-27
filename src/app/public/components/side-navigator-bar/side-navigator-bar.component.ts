@@ -24,6 +24,7 @@ export class SideNavigatorBarComponent {
   }
 
   onNavigateRestaurants() {
+    this.router.navigate(['restaurant']).then();
 
   }
 
