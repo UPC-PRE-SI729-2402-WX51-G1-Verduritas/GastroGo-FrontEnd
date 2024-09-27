@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {MatSidenavContainer} from "@angular/material/sidenav";
 import {MatIcon} from "@angular/material/icon";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-side-navigator-bar',
@@ -13,5 +14,33 @@ import {MatIcon} from "@angular/material/icon";
   styleUrl: './side-navigator-bar.component.css'
 })
 export class SideNavigatorBarComponent {
+  private router: Router = inject(Router);
 
+  onNavigateHome() {
+
+  }
+
+  onNavigateRestaurants() {
+
+  }
+
+  onNavigateOrders() {
+
+  }
+
+  onNavigateTeamActivities() {
+
+  }
+
+  onNavigateProfile() {
+
+  }
+
+  onNavigateNotifications() {
+
+  }
+
+  onNavigateLogout() {
+
+  }
 }
