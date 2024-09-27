@@ -1,14 +1,17 @@
 import {Component, inject} from '@angular/core';
-import {MatSidenavContainer} from "@angular/material/sidenav";
+import {MatSidenav, MatSidenavContainer} from "@angular/material/sidenav";
 import {MatIcon} from "@angular/material/icon";
 import {ActivatedRoute, Router} from "@angular/router";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-side-navigator-bar',
   standalone: true,
   imports: [
     MatSidenavContainer,
-    MatIcon
+    MatIcon,
+    MatSidenav,
+    NgOptimizedImage
   ],
   templateUrl: './side-navigator-bar.component.html',
   styleUrl: './side-navigator-bar.component.css'
