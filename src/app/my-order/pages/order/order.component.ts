@@ -15,5 +15,7 @@ import {MatButton} from "@angular/material/button";
   styleUrl: './order.component.css'
 })
 export class OrderComponent {
+onSeeDetails() {
 
+  }
 }
