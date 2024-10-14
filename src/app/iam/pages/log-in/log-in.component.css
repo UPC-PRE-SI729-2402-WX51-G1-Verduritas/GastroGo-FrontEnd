@@ -9,52 +9,53 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
+  padding: 2vw;
   max-width: 500px;
-  margin-left: 400px;
+  margin: 0 auto;
+  margin-left: 27vw;
 }
 
 .login-section h1 {
-  font-size: 40px;
-  margin: 20px 0;
+  font-size: 2.5vw;
+  margin: 2vh 0;
 }
 
 .form-group {
   width: 100%;
   max-width: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 1.5vh;
 }
 
 input {
-  width: 135%;
-  padding: 10px;
+  width: 150%;
+  padding: 0.6vw;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .forgot-password {
   color: black;
-  margin-top: 10px;
+  margin-top: 1vh;
   text-decoration: none;
 }
 
 .login-button {
-  width: 143%;
-  max-width: 400px;
-  padding: 10px;
+  width: 158%;
+  max-width: 500px;
+  padding: 0.5vw;
   background-color: #ff6f3f;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1vw;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 20px;
+  margin-top: 2vh;
 }
 
 .login-button:hover {
@@ -69,7 +70,7 @@ a {
 }
 
 .login-section p {
-  margin-top: 20px;
+  margin-top: 2vh;
   text-align: center;
   width: 100%;
 }
@@ -82,37 +83,28 @@ a {
 
 @media (max-width: 768px) {
   .login-section {
-    margin-left: 20px;
+    padding: 4%;
   }
 
   .login-section h1 {
-    font-size: 28px;
-  }
-
-  .login-button {
-    width: 100%;
+    font-size: 5vw;
   }
 }
 
 @media (max-width: 480px) {
-  .login-section {
-    margin-left: 10px;
-  }
-
   .login-section h1 {
-    font-size: 24px;
+    font-size: 6vw;
   }
 
   .login-button {
-    font-size: 14px;
-    padding: 10px;
+    font-size: 5vw;
   }
 
   .form-group input {
-    width: 100%;
+    padding: 1.5vh;
   }
 
   .login-section p {
-    font-size: 12px;
+    font-size: 3vw;
   }
 }

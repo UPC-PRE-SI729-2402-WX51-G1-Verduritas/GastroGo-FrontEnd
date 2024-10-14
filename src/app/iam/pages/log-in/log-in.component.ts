@@ -11,5 +11,8 @@ import {AuthBackgroundComponent} from "../../../public/components/auth-backgroun
   styleUrl: './log-in.component.css'
 })
 export class LogInComponent {
-
+  private router: any;
+  goToSignUp() {
+    this.router.navigate(['/sign-up']);
+  }
 }
