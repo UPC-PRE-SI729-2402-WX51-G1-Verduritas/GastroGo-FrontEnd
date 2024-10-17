@@ -1,16 +1,40 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav mode="side" opened class="sidenav-content" position="start">
     <div class="menu-section">
-      <button mat-button (click)="onNavigateHome()"><mat-icon>home</mat-icon>Home</button>
-      <button mat-button (click)="onNavigateRestaurants()"><mat-icon>storefront</mat-icon>Restaurants</button>
-      <button mat-button (click)="onNavigateOrders()"><mat-icon>inventory</mat-icon>My orders</button>
-      <button mat-button (click)="onNavigateTeamActivities()"><mat-icon>inventory</mat-icon>Team activities</button>
-      <button mat-button (click)="onNavigateProfile()"><mat-icon>person</mat-icon>Profile</button>
-      <button mat-button (click)="onNavigateNotifications()"><mat-icon>notifications</mat-icon>Notifications</button>
+      <button mat-button (click)="onNavigateHome()">
+        <mat-icon>home</mat-icon>
+        Home
+      </button>
+      <button mat-button (click)="onNavigateRestaurants()">
+        <mat-icon>storefront</mat-icon>
+        Restaurants
+      </button>
+      <button mat-button (click)="onNavigateOrders()">
+        <mat-icon>inventory</mat-icon>
+        My orders
+      </button>
+      <button mat-button (click)="onNavigateTeamActivities()">
+        <mat-icon>inventory</mat-icon>
+        Team activities
+      </button>
+      <button mat-button (click)="onNavigateProfile()">
+        <mat-icon>person</mat-icon>
+        Profile
+      </button>
+      <button mat-button (click)="onNavigateNotifications()">
+        <mat-icon>notifications</mat-icon>
+        Notifications
+      </button>
       <img src="assets/images/logo.png" alt="GastroGo Logo" class="logo" (click)="onNavigateHome()">
-      <div class="footer-content">
-        <button mat-button (click)="onNavigateLogout()"><mat-icon>logout</mat-icon>Logout</button>
+      <div class="spacer">
+        <div class="footer-content">
+          <button mat-button (click)="onNavigateLogout()">
+            <mat-icon>logout</mat-icon>
+            Logout
+          </button>
+        </div>
       </div>
+
 
     </div>
   </mat-sidenav>
