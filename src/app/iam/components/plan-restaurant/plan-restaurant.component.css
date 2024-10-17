@@ -1,0 +1,51 @@
+.login-page {
+  display: flex;
+  height: 100vh;
+}
+
+.login-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fdeae8;
+  padding: 20px;
+  margin-left:450px;
+}
+
+.Logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+}
+
+.login-section h1 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-plan {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.continue-button {
+  width: 385px;
+  max-width: 490px;
+  padding: 10px;
+  background-color: #ff6f3f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.continue-button:hover {
+  background-color: #ff5a21;
+}
