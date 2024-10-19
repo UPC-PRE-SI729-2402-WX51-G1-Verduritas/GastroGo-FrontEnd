@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {AuthBackgroundComponent} from "../../../public/components/auth-background/auth-background.component";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-log-in',
@@ -11,8 +12,14 @@ import {AuthBackgroundComponent} from "../../../public/components/auth-backgroun
   styleUrl: './log-in.component.css'
 })
 export class LogInComponent {
-  private router: any;
+  constructor(private router: Router) {}
   goToSignUp() {
-    this.router.navigate(['/sign-up']);
+    this.router.navigate(['sign-up']);
+  }
+  goToHome() {
+    this.router.navigate(['home']);
+  }
+  goToRecoverPassword() {
+    this.router.navigate(['recover-password']);
   }
 }
