@@ -7,9 +7,13 @@ import {RestaurantComponent} from "./workers/restaurant/page/restaurant/restaura
 import {LogInComponent} from "./iam/pages/log-in/log-in.component";
 import {SignUpComponent} from "./iam/pages/sign-up/sign-up.component";
 import {AuthBackgroundComponent} from "./public/components/auth-background/auth-background.component";
-import {PaymentComponent} from "./iam/components/payment.component/payment.component";
+import {PaymentComponent} from "./iam/components/payment/payment.component";
 import {PlanRestaurantComponent} from "./iam/components/plan-restaurant/plan-restaurant.component";
 import {PlanWorkersComponent} from "./iam/components/plan-workers/plan-workers.component";
+import {RecoverPasswordComponent} from "./iam/components/recover-password/recover-password.component";
+import {SignUpRestaurantComponent} from "./iam/components/sign-up-restaurant/sign-up-restaurant.component";
+import {SignUpWorkersComponent} from "./iam/components/sign-up-workers/sign-up-workers.component";
+import {SuccessfulRecoverPasswordComponent} from "./iam/components/successful-recover-password/successful-recover-password.component";
 
 export const routes: Routes = [
   {path:'home',component: HomeComponent},
@@ -23,5 +27,9 @@ export const routes: Routes = [
   {path: 'payment', component: PaymentComponent},
   {path: 'plan-restaurant', component: PlanRestaurantComponent},
   {path: 'plan-workers', component: PlanWorkersComponent},
-  {path: '', redirectTo: 'home', pathMatch: 'full' },
+  {path: 'recover-password', component: RecoverPasswordComponent},
+  {path: 'sign-up-restaurant', component: SignUpRestaurantComponent},
+  {path: 'sign-up-workers', component: SignUpWorkersComponent},
+  {path: 'successful-recover-password', component: SuccessfulRecoverPasswordComponent},
+  {path: '', redirectTo: 'log-in', pathMatch: 'full' },
 ];
