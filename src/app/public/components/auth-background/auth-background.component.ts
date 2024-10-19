@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-auth-background',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './auth-background.component.css'
 })
 export class AuthBackgroundComponent {
+  constructor(private router: Router) {}
 
+
+  goToLogin() {
+    this.router.navigate(['log-in']);
+  }
 }
