@@ -1,9 +1,5 @@
 .main-container {
   display: flex;
-  justify-content: flex-start;
-  gap: 80px;
-  margin-left: 60px;
-  margin-top: 10px;
 
 }
 

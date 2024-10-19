@@ -1,14 +1,11 @@
 .main-container {
   display: flex;
-  justify-content: flex-start;
-  gap: 80px;
-  margin-left: 260px;
-  margin-top: 20px;
 }
 
 .orders-container {
   padding: 20px;
   min-width: 750px;
+  margin-left: 350px;
 }
 
 .header-container {

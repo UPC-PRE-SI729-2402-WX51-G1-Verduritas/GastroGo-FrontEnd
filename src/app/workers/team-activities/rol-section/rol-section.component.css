@@ -1,14 +1,11 @@
 .rol-container {
   display: flex;
   justify-content: flex-start;
-  gap: 80px;
-  margin-left: 140px;
-  margin-top: 20px;
 }
 
 .roles {
   padding: 55px;
-  margin-left: 80px;
+  margin-left: 180px;
 }
 
 .role-header {
