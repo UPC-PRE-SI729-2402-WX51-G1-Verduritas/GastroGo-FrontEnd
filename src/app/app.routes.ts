@@ -4,6 +4,7 @@ import {HomeComponent} from "./public/home/pages/home/home.component";
 import {ProfileComponent} from "./profile/page/my-profile/my-profile.component";
 import {OrderComponent}  from "./my-order/pages/order/order.component";
 import {RestaurantComponent} from "./restaurant/page/restaurant/restaurant.component";
+import {MenuComponent} from "./restaurant/page/menu/menu.component";
 
 export const routes: Routes = [
   {path:'home',component: HomeComponent},
@@ -11,5 +12,6 @@ export const routes: Routes = [
   {path:'role',component: RolSectionComponent},
   {path:'order',component: OrderComponent},
   {path:'restaurant',component: RestaurantComponent},
+  {path:'menu',component: MenuComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
