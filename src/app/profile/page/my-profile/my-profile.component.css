@@ -1,15 +1,17 @@
 .profile-container {
+  display: flex;
   flex-basis: content;
   flex-direction: column;
-  align-items: center;
-  padding: 80px;
+  justify-content: center;
+  padding-left: 10%;
+  width: 100%;
+  height: 100%;
 }
 
 .profile-header {
-  background-color: #FF7F50;
+  background-color: #FF7338;
   display: flex;
-  text-align: center;
-  align-items: center;
+  justify-content: center;
   padding: 20px;
 }
 
@@ -60,7 +62,7 @@
 }
 
 .save-button {
-  background-color: #FF8C00;
+  background-color: #FF7338;
   color: white;
   padding: 12px;
   border: none;
@@ -83,33 +85,46 @@
   padding: 10px;
 }
 .subscription-box {
+  margin-bottom: 20px;
 }
 
 .subscription-box h3 {
-  margin-bottom: 20px;
+  font-weight: normal;
   font-size: 20px;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .conteiner-subscription-title{
-  background-color: #FF7F50;
-  margin-bottom: 0px;
+  background-color: #FF7338;
   color: white;
-  padding-bottom:5px;
-  margin-top: 20px;
-  vertical-align: middle;
-  horiz-align: center;
+  padding: 5px;
 }
 
 .subs-team-paid {
   display: flex;
+  justify-content: space-between;
 }
 
 .subscription-details {
-  font-size: 16px;
-  background-color: #ffffff;
+  font-size: 12px;
+  background-color: #faeae7;
   margin-top: 0px;
   padding: 20px;
+}
+.subscription-details button {
+  background-color: #FF7338;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+.subscription-details button:hover {
+  background-color: #c65829;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .payment-options {
