@@ -14,13 +14,17 @@ import {RecoverPasswordComponent} from "./iam/components/recover-password/recove
 import {SignUpRestaurantComponent} from "./iam/components/sign-up-restaurant/sign-up-restaurant.component";
 import {SignUpWorkersComponent} from "./iam/components/sign-up-workers/sign-up-workers.component";
 import {SuccessfulRecoverPasswordComponent} from "./iam/components/successful-recover-password/successful-recover-password.component";
-
+import {OrderDetailsComponent} from "./workers/my-order/pages/order-details/order-details.component";
+import {
+  OrderDetailsRestaurantComponent
+} from "./restaurants/my-order/pages/order-details-restaurant/order-details-restaurant.component";
 export const routes: Routes = [
   {path:'home',component: HomeComponent},
   {path:'profile',component: ProfileComponent},
   {path:'restaurant',component: RestaurantComponent},
   {path:'role',component: RolSectionComponent},
   {path:'order',component: OrderComponent},
+  { path:'order-details',component: OrderDetailsComponent},
   {path: 'log-in', component: LogInComponent},
   {path: 'sign-up', component: SignUpComponent},
   {path: 'auth', component: AuthBackgroundComponent},
@@ -32,4 +36,6 @@ export const routes: Routes = [
   {path: 'sign-up-workers', component: SignUpWorkersComponent},
   {path: 'successful-recover-password', component: SuccessfulRecoverPasswordComponent},
   {path: '', redirectTo: 'log-in', pathMatch: 'full' },
+  { path:'order-details-restaurant',component: OrderDetailsRestaurantComponent},
+  
 ];
