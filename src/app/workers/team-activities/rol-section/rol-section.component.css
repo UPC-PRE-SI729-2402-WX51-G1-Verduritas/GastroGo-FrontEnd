@@ -1,40 +1,43 @@
 .rol-container {
   display: flex;
   justify-content: flex-start;
+  gap: 80px;
+  margin-left: 544px;
+  margin-top: 216px;
 }
 
 .roles {
   padding: 55px;
-  margin-left: 180px;
+  margin-left: 80px;
 }
 
 .role-header {
   background-color: #FF7338;
   padding: 20px;
-  border-radius: 0;
-  max-width: 950px;
+  min-width: 800px;
   text-align: center;
-  max-height: 90px;
-  font-size: 24px;
+  min-height: 102px;
+  font-size: 36px;
   color: #FFFFFF;
   font-weight: bold;
-  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .role-selection {
   background-color: #FFCFBB;
   padding: 5rem;
-  border-radius: 0;
-  min-width: 800px;
-  min-height: 574px;
   margin: auto;
   text-align: center;
+  min-width: 800px;
+  max-height: 574px;
 }
 
 .role-buttons {
   display: flex;
   flex-direction: column;
-  gap: 7rem; /* Espacio entre los contenedores de los botones */
+  gap: 7rem;
   margin-top: 35px;
 }
 
