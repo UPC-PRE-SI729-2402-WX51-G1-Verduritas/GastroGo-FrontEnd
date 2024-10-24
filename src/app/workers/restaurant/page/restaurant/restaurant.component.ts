@@ -8,6 +8,8 @@ import { AsyncPipe } from '@angular/common';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import {MatCard} from "@angular/material/card";
+import {MatIcon} from "@angular/material/icon";
 
 @Component({
   selector: 'app-restaurant',
@@ -22,7 +24,9 @@ import { MatSelectModule } from '@angular/material/select';
     MatAutocompleteModule,
     ReactiveFormsModule,
     AsyncPipe,
-    MatSelectModule
+    MatSelectModule,
+    MatCard,
+    MatIcon
   ],
   templateUrl: './restaurant.component.html',
   styleUrl: './restaurant.component.css'
