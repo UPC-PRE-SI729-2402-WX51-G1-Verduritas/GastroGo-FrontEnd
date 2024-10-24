@@ -18,11 +18,19 @@ import {OrderDetailsComponent} from "./workers/my-order/pages/order-details/orde
 import {
   OrderDetailsRestaurantComponent
 } from "./restaurants/my-order/pages/order-details-restaurant/order-details-restaurant.component";
+import {JoinATeamComponent} from "./workers/team-activities/components/join-a-team/join-a-team.component";
+import {CreateTeamComponent} from "./workers/team-activities/components/create-team/create-team.component";
+import {LeaderComponent} from "./workers/team-activities/pages/leader/leader.component";
+import {MemberComponent} from "./workers/team-activities/pages/member/member.component";
 export const routes: Routes = [
   {path:'home',component: HomeComponent},
   {path:'profile',component: ProfileComponent},
   {path:'restaurant',component: RestaurantComponent},
   {path:'role',component: RolSectionComponent},
+  {path: 'join-a-team', component: JoinATeamComponent },
+  {path: 'create-team', component: CreateTeamComponent },
+  {path: 'leader', component: LeaderComponent},
+  {path: 'member', component: MemberComponent},
   {path:'order',component: OrderComponent},
   { path:'order-details',component: OrderDetailsComponent},
   {path: 'log-in', component: LogInComponent},
