@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {MatButton} from "@angular/material/button";
-import {SideNavigatorBarComponent} from "../../../public/components/side-navigator-bar/side-navigator-bar.component";
+import {SideNavigatorBarComponent} from "../../../../public/components/side-navigator-bar/side-navigator-bar.component";
 import {Router} from "@angular/router";
 
 @Component({
