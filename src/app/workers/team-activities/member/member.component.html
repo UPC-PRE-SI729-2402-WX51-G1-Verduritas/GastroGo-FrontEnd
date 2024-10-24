@@ -1,0 +1,95 @@
+<div class="member-container">
+  <div class="member-header">
+    Team Member
+  </div>
+  <div class="member-content">
+    <div class="card-container">
+
+      <mat-card>
+        <div class="card-header">Your Team</div>
+        <div class="card">
+          <p><strong>Legends:</strong> <span>25 workers</span></p>
+        </div>
+      </mat-card>
+
+      <mat-card>
+        <div class="card-header">Join a Team</div>
+        <div class="card join-team">
+          <p>Enter code to join:</p>
+          <input matInput placeholder="Enter code here" [(ngModel)]="teamCode" class="input-field" />
+          <button mat-raised-button class="join-button" (click)="joinTeam()">Join Team</button>
+        </div>
+      </mat-card>
+
+      <mat-card>
+        <div class="card-header">Voting</div>
+        <div class="card voting">
+          <p>Voting code for meal: 23E-R45</p>
+          <div class="vote-options">
+            <div class="vote-item">
+              <p><strong>Ochi</strong></p>
+              <div class="vote-icon">
+                <p class="vote-text">Vote!</p>
+                <button mat-icon-button class="vote-button" (click)="vote(1)">
+                  <mat-icon>check</mat-icon>
+                </button>
+              </div>
+              <div class="vote-result">
+                <p class="result-text">Result:</p>
+                <p class="results">24</p>
+              </div>
+            </div>
+            <div class="vote-item">
+              <p><strong>Palm & Vine</strong></p>
+              <div class="vote-icon">
+                <button mat-icon-button class="vote-button" (click)="vote(2)">
+                  <mat-icon>check</mat-icon>
+                </button>
+              </div>
+              <div class="vote-result">
+                <p class="results">1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+
+      <mat-card>
+        <div class="card-header">Join the voting</div>
+        <div class="card join-voting">
+          <p>Enter code to join voting:</p>
+          <input matInput placeholder="Enter code here" [(ngModel)]="votingCode" class="input-field" />
+          <button mat-raised-button class="join-button" (click)="joinVoting()">Join Voting</button>
+        </div>
+      </mat-card>
+
+
+      <mat-card>
+        <div class="card-header">Rate the latest experience</div>
+        <div class="card rate-experience">
+          <p>Restaurant Name - Order #00000001</p>
+          <mat-form-field>
+            <mat-select>
+              <mat-option>Excellent</mat-option>
+              <mat-option>Good</mat-option>
+              <mat-option>Fair</mat-option>
+              <mat-option>Poor</mat-option>
+              <mat-option>Very Poor</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </mat-card>
+
+      <mat-card>
+        <div class="card-header">Team preferences</div>
+        <div class="card team-preferences">
+          <p><strong>Most ordered dishes</strong></p>
+          <p>Noodles, Lasagna, Lomo Saltado</p>
+          <p><strong>Top restaurants of the team</strong></p>
+          <p>La Mar, Palm & Vine</p>
+        </div>
+      </mat-card>
+
+    </div>
+  </div>
+</div>
