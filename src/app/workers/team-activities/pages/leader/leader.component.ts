@@ -5,6 +5,8 @@ import {MatCard, MatCardContent, MatCardHeader} from "@angular/material/card";
 import {FormsModule} from "@angular/forms";
 import {MatIcon} from "@angular/material/icon";
 import {MatFormField, MatOption, MatSelect} from "@angular/material/select";
+import {SideNavigatorBarComponent} from "../../../../public/components/side-navigator-bar/side-navigator-bar.component";
+import {MatCheckbox} from "@angular/material/checkbox";
 
 @Component({
   selector: 'app-leader',
@@ -20,7 +22,9 @@ import {MatFormField, MatOption, MatSelect} from "@angular/material/select";
     MatButton,
     MatCardHeader,
     MatIconButton,
-    NgForOf
+    NgForOf,
+    SideNavigatorBarComponent,
+    MatCheckbox
   ],
   templateUrl: './leader.component.html',
   styleUrl: './leader.component.css'
@@ -34,9 +38,9 @@ export class LeaderComponent {
 
   selectedRestaurant1: string | null = null;
   selectedRestaurant2: string | null = null;
+  selectedRating: string | null = null;
 
-  faCheck() {
-    return 'check';
-  }
-
+  vote1: boolean = false;
+  vote2: boolean = false;
 }
+

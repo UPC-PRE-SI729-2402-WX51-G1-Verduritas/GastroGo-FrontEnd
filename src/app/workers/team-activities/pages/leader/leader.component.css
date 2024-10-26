@@ -1,3 +1,7 @@
+.leader{
+  display: flex;
+  flex-direction: row;
+}
 .leader-container {
   width: 800px;
   height: 880px;
