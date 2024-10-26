@@ -1,19 +1,24 @@
-.join-container {
-  padding: 20px;
-  margin-left: 200px;
-  justify-content: center;
+.join-a-team-container{
+  display: flex;
+  flex-direction: row;
+}
+.join-container{
+  padding-left: 250px;
+  margin-top: 30px;
+  margin-left: 80px;
+
 }
 
 .join-header {
   background-color: #FF7338;
   padding: 20px;
   border-radius: 8px 8px 0 0;
-  min-width: 800px;
+  max-width: 800px;
   text-align: center;
-  max-height: 102px;
   font-size: 24px;
   color: #FFFFFF;
   font-weight: bold;
+
 }
 
 .join-content {
@@ -21,7 +26,7 @@
   padding: 20px;
   border-radius: 0 0 8px 8px;
   max-width: 800px;
-  min-height: 880px;
+  min-height: 780px;
   margin: auto;
   text-align: center;
   display: flex;
