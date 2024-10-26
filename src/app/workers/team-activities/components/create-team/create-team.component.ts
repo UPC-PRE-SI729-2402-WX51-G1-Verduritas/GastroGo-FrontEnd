@@ -5,6 +5,7 @@ import {MatCard} from "@angular/material/card";
 import {FormsModule} from "@angular/forms";
 import {MatFormField} from "@angular/material/select";
 import {Router} from "@angular/router";
+import {SideNavigatorBarComponent} from "../../../../public/components/side-navigator-bar/side-navigator-bar.component";
 
 @Component({
   selector: 'app-create-team',
@@ -15,7 +16,8 @@ import {Router} from "@angular/router";
     FormsModule,
     MatCard,
     MatButton,
-    MatInput
+    MatInput,
+    SideNavigatorBarComponent
   ],
   templateUrl: './create-team.component.html',
   styleUrl: './create-team.component.css'

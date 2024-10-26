@@ -1,3 +1,7 @@
+.create-a-team{
+  display: flex;
+  flex-direction: row;
+}
 .create-container {
   padding: 20px;
   margin-left: 200px;
@@ -21,7 +25,7 @@
   padding: 20px;
   border-radius: 0 0 8px 8px;
   max-width: 800px;
-  min-height: 880px;
+  min-height: 770px;
   margin: auto;
   text-align: center;
   display: flex;
