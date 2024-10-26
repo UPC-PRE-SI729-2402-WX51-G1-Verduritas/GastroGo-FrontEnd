@@ -10,6 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import {MatCard} from "@angular/material/card";
 import {MatIcon} from "@angular/material/icon";
+import {SideNavigatorBarComponent} from "../../../../public/components/side-navigator-bar/side-navigator-bar.component";
 
 @Component({
   selector: 'app-restaurant',
@@ -26,7 +27,8 @@ import {MatIcon} from "@angular/material/icon";
     AsyncPipe,
     MatSelectModule,
     MatCard,
-    MatIcon
+    MatIcon,
+    SideNavigatorBarComponent
   ],
   templateUrl: './restaurant.component.html',
   styleUrl: './restaurant.component.css'
