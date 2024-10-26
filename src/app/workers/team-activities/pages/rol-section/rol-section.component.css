@@ -2,12 +2,12 @@
   display: flex;
   justify-content: flex-start;
   gap: 80px;
-  margin-left: 544px;
-  margin-top: 216px;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
 .roles {
-  padding: 55px;
+  padding: 35px;
   margin-left: 80px;
 }
 
@@ -30,8 +30,8 @@
   padding: 5rem;
   margin: auto;
   text-align: center;
-  min-width: 800px;
-  max-height: 574px;
+  max-width: 800px;
+  min-height: 374px;
 }
 
 .role-buttons {
