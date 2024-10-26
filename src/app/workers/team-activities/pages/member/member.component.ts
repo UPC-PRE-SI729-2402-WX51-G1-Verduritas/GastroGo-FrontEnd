@@ -5,6 +5,8 @@ import {MatInput} from "@angular/material/input";
 import {MatIcon} from "@angular/material/icon";
 import {MatCard} from "@angular/material/card";
 import {MatFormField, MatOption, MatSelect} from "@angular/material/select";
+import {SideNavigatorBarComponent} from "../../../../public/components/side-navigator-bar/side-navigator-bar.component";
+import {MatCheckbox} from "@angular/material/checkbox";
 
 @Component({
   selector: 'app-member',
@@ -18,7 +20,9 @@ import {MatFormField, MatOption, MatSelect} from "@angular/material/select";
     MatIconButton,
     MatInput,
     MatButton,
-    FormsModule
+    FormsModule,
+    SideNavigatorBarComponent,
+    MatCheckbox
   ],
   templateUrl: './member.component.html',
   styleUrl: './member.component.css'
@@ -26,6 +30,10 @@ import {MatFormField, MatOption, MatSelect} from "@angular/material/select";
 export class MemberComponent {
   teamCode: string = '';
   votingCode: string = '';
+  selectedRating: string | null = null;
+
+  voteOchi: boolean = false;
+  votePalmVine: boolean = false;
 
   joinTeam() {
     console.log('Joining team');

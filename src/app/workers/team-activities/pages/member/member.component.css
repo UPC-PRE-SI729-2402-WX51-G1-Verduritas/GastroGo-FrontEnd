@@ -1,23 +1,28 @@
+.member{
+  display: flex;
+  flex-direction: row;
+}
 .member-container {
-  padding: 20px;
-  margin-left: 540px;
-  margin-top: 90px;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: grid;
+  width: 800px;
+  height: 880px;
+  position: absolute;
+  top: 90px;
+  left: 540px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 0px 0px 0px;
+  opacity: 1;
+  overflow: hidden;
 }
 
 .member-header {
   background-color: #FF7338;
-  padding: 20px;
-  border-radius: 8px 8px 0 0;
-  max-width: 880px;
+  padding: 25px;
   text-align: center;
   font-size: 24px;
-  color: #FFFFFF;
+  color: white;
   font-weight: bold;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .member-content {
