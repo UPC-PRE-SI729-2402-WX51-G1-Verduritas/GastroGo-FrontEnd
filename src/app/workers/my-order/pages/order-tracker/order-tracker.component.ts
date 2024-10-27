@@ -5,7 +5,7 @@ import {RouterLink} from "@angular/router";
   selector: 'app-order-tracker',
   standalone: true,
   imports: [
-    RouterLink
+    RouterLink,
        SideNavigatorBarComponent
   ],
   templateUrl: './order-tracker.component.html',
