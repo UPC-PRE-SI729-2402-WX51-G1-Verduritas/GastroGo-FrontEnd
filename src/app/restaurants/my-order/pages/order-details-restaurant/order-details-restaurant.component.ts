@@ -8,7 +8,7 @@ import {RouterLink} from "@angular/router";
 @Component({
   selector: 'app-order-details-restaurant',
   standalone: true,
-  imports: [CommonModule, MatInputModule, MatButtonModule, MatCheckboxModule, RouterLink],
+  imports: [CommonModule, MatInputModule, MatButtonModule, MatCheckboxModule, RouterLink, SideNavigatorBarComponent],
   templateUrl: './order-details-restaurant.component.html',
   styleUrl: './order-details-restaurant.component.css'
 })
