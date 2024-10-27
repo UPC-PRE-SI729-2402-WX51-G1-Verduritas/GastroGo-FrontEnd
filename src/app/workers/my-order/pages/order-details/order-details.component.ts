@@ -14,5 +14,5 @@ import {RouterLink} from "@angular/router";
   styleUrl: './order-details.component.css'
 })
 export class OrderDetailsComponent {
-
+  cancelButton: boolean=false;
 }

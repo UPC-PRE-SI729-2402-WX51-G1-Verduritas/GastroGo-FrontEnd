@@ -47,11 +47,19 @@
             </div>
           </div>
           <div class="buttons">
-            <button class="read-more-button" [routerLink]="['/order']">Go Back To Orders</button>
-            <button>Cancel Order</button>
-          </div>
+
+              <button class="read-more-button" [routerLink]="['/order']">Go Back To Orders</button>
+              <button class="read-more-button" (click)="cancelButton=true">Cancel Order</button>
+              <div *ngIf="cancelButton" class="modal-overlay">
+                <div class="modal">
+                  <h2>Are you sure you want to cancel the order?</h2>
+                  <p>We will notify the client about the matter so they have time to re-order.</p>
+                  <button class="modal-button" [routerLink]="['/order']">Accept</button>
+                  <button class="modal-button" [routerLink]="['/order']">Cancel</button>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
   </div>
 </div>
-

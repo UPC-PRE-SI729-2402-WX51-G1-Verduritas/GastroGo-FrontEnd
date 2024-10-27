@@ -2,7 +2,9 @@
     flex-basis: content;
     flex-direction: column;
     align-items: center;
-    padding: 80px;
+     padding: 65px;
+      background-color: #FFCFBB;
+  margin: auto;
 }
 .tittle {
     display: flex;
