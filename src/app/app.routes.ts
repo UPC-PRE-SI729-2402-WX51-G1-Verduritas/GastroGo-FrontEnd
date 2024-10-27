@@ -25,8 +25,9 @@ import {MemberComponent} from "./workers/team-activities/pages/member/member.com
 import {MenuComponent} from "./restaurants/menu/pages/menu/menu/menu.component";
 import {RestaurantProfileComponent} from "./restaurants/profile/restaurant-profile/restaurant-profile.component";
 import {OrderRestaurantComponent} from "./restaurants/my-order/pages/order/order-restaurant.component";
-import { CancelOrderDialogRestaurantComponent} from "./restaurants/my-order/pages/cancel-order-dialog/cancel-order-dialog-restaurant.component";
+import { CancelOrderDialogRestaurantComponent} from "./restaurants/my-order/pages/cancel-order-dialog-restaurant/cancel-order-dialog-restaurant.component";
 import {OrderTrackerComponent} from "./workers/my-order/pages/order-tracker/order-tracker.component";
+import {CancelOrderDialogWorkersComponent} from "./workers/my-order/pages/cancel-order-dialog-workers/cancel-order-dialog-workers.component";
 export const routes: Routes = [
   {path:'home',component: HomeComponent},
   {path:'profile',component: ProfileComponent},
@@ -55,5 +56,6 @@ export const routes: Routes = [
 {path:'order-restaurant',component: OrderRestaurantComponent},
   {path:'cancel-order-dialog',component: CancelOrderDialogRestaurantComponent},
   {path:'order-tracker',component: OrderTrackerComponent},
+   {path:'cancel-order-dialog-workers',component: CancelOrderDialogWorkersComponent},
 
 ];
