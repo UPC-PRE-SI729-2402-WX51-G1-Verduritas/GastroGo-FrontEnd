@@ -28,6 +28,7 @@ import {OrderRestaurantComponent} from "./restaurants/my-order/pages/order/order
 import { CancelOrderDialogRestaurantComponent} from "./restaurants/my-order/pages/cancel-order-dialog-restaurant/cancel-order-dialog-restaurant.component";
 import {OrderTrackerComponent} from "./workers/my-order/pages/order-tracker/order-tracker.component";
 import {CancelOrderDialogWorkersComponent} from "./workers/my-order/pages/cancel-order-dialog-workers/cancel-order-dialog-workers.component";
+import {DetailRestaurantComponent} from "./workers/restaurant/page/detail-restaurant/detail-restaurant.component";
 export const routes: Routes = [
   {path:'home',component: HomeComponent},
   {path:'profile',component: ProfileComponent},
@@ -50,12 +51,13 @@ export const routes: Routes = [
   {path: 'sign-up-workers', component: SignUpWorkersComponent},
   {path: 'successful-recover-password', component: SuccessfulRecoverPasswordComponent},
   {path: 'menu', component: MenuComponent},
-  {path: '', redirectTo: 'log-in', pathMatch: 'full' },
-  { path:'order-details-restaurant',component: OrderDetailsRestaurantComponent},
+  {path:'order-details-restaurant',component: OrderDetailsRestaurantComponent},
   {path:'restaurant-profile', component:RestaurantProfileComponent},
-{path:'order-restaurant',component: OrderRestaurantComponent},
+  {path:'order-restaurant',component: OrderRestaurantComponent},
   {path:'cancel-order-dialog',component: CancelOrderDialogRestaurantComponent},
   {path:'order-tracker',component: OrderTrackerComponent},
-   {path:'cancel-order-dialog-workers',component: CancelOrderDialogWorkersComponent},
+  {path:'cancel-order-dialog-workers',component: CancelOrderDialogWorkersComponent},
+  {path: 'detail-restaurant', component: DetailRestaurantComponent},
 
+  {path: '', redirectTo: 'log-in', pathMatch: 'full' },
 ];

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffe3da;
   padding: 20px;
   border-radius: 10px;
   max-width: 600px;
@@ -13,8 +12,7 @@
 .restaurant-info {
   display: flex;
   width: 100%;
-  background-color: #ffbba7;
-  border-radius: 10px;
+  background-color: #FFCFBB;
   padding: 20px;
   align-items: center;
   margin-bottom: 20px;
@@ -31,11 +29,13 @@
 .restaurant-details h2 {
   margin: 0;
   color: #333;
+  text-align: center;
 }
 
 .restaurant-details p {
   margin: 5px 0;
   color: #333;
+  padding-top: 15px;
 }
 
 .star {
@@ -51,6 +51,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%;
 }
 
 .menu-button:hover {
@@ -59,9 +60,8 @@
 
 .comments-section {
   width: 100%;
-  background-color: #ffbba7;
+  background-color: #FFCFBB;
   padding: 20px;
-  border-radius: 10px;
 }
 
 .comments-section h3 {
@@ -90,4 +90,10 @@
 .comment-content p {
   margin: 0;
   color: #555;
+}
+
+.rating-star {
+  position: relative;
+  top: 5px;
+  margin-left: 5px;
 }

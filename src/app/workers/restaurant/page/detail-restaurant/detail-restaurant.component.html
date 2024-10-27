@@ -1,20 +1,22 @@
+<div style="display: flex; flex-direction: row;">
+  <app-side-navigator-bar></app-side-navigator-bar>
 <div class="restaurant-container">
   <!-- Restaurant Information -->
   <div class="restaurant-info">
-    <img src="assets/sushi.jpg" alt="Restaurant Image" class="restaurant-image" />
+    <img src="assets/images/Palm_&_Vine.png" alt="Restaurant Image" class="restaurant-image" />
     <div class="restaurant-details">
       <h2>Ochi</h2>
       <p><strong>Address:</strong> Santiago de Surco, El Polo, 101</p>
       <p><strong>Schedule:</strong> 12:00 - 18:00</p>
       <p><strong>Status:</strong> Open</p>
       <p><strong>Rating:</strong>
-        <span class="star">★</span>
-        <span class="star">★</span>
-        <span class="star">★</span>
-        <span class="star">★</span>
-        <span class="star">★</span>
+        <mat-icon class="rating-star">star</mat-icon>
+        <mat-icon class="rating-star">star</mat-icon>
+        <mat-icon class="rating-star">star</mat-icon>
+        <mat-icon class="rating-star">star</mat-icon>
+        <mat-icon class="rating-star">star</mat-icon>
       </p>
-      <a class="menu-button" [routerLink]="['/restaurant']">see menu</a>
+      <button class="menu-button" [routerLink]="['/menu']">see menu</button>
     </div>
   </div>
 
@@ -43,4 +45,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>
