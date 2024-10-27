@@ -1,4 +1,5 @@
-
+<div style="display: flex; flex-direction: row;">
+  <app-side-navigator-bar></app-side-navigator-bar>
 <div class="profile-container">
 
 
@@ -26,7 +27,17 @@
               <option value="Canceled">Canceled</option>
             </select>
           </div>
-          <button class="update-status">Update Status</button>
+          <button class="read-more-button" (click)="UpdateButton=true">UpdateStatus</button>
+          <div *ngIf="UpdateButton" class="modal-overlay">
+            <div class="modal">
+              <h2>Status Update!</h2>
+              <p>We have notified the client about the order.</p>
+
+              <button class="modal-button" [routerLink]="['/order-restaurant']">Accept</button>
+
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -72,7 +83,7 @@
           <div class="modal">
             <h2>Are you sure you want to cancel the order?</h2>
             <p>We will notify the client about the matter so they have time to re-order.</p>
-            <button class="modal-button">Accept</button>
+            <button class="modal-button" [routerLink]="['/order-restaurant']">Accept</button>
           </div>
         </div>
       </div>
