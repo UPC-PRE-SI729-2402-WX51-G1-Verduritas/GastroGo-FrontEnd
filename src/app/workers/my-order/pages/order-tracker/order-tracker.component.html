@@ -1,15 +1,15 @@
-
+<div style="display: flex; flex-direction: row;">
+  <app-side-navigator-bar></app-side-navigator-bar>
 <div class="tracker-container">
 
   <h1>Order Tracker</h1>
   <p class="subtitle">Check where your order is!</p>
 
-  <!-- Imagen del mapa de ejemplo -->
+
   <div class="map-placeholder">
     <img src="assets/map-placeholder.png" alt="Map" />
   </div>
 
-  <!-- Detalles del estado del pedido -->
   <div class="order-status">
     <p>Your order is:</p>
     <div class="status-row">
@@ -23,7 +23,7 @@
     <p class="estimated-time">Estimated time to arrive: Between 13:50 - 14:00</p>
   </div>
   <div class="buttons">
-  <!-- Botón de regreso -->
+
   <button class="read-more-button" [routerLink]="['/order']">Go Back To Orders</button>
 </div>
 </div>
