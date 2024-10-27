@@ -1,0 +1,93 @@
+.restaurant-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffe3da;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.restaurant-info {
+  display: flex;
+  width: 100%;
+  background-color: #ffbba7;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.restaurant-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.restaurant-details h2 {
+  margin: 0;
+  color: #333;
+}
+
+.restaurant-details p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.star {
+  color: #ffbe3b;
+  font-size: 20px;
+}
+
+.menu-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff6b3f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background-color: #e65c35;
+}
+
+.comments-section {
+  width: 100%;
+  background-color: #ffbba7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.comments-section h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.user-icon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.comment-content strong {
+  color: #333;
+}
+
+.comment-content p {
+  margin: 0;
+  color: #555;
+}

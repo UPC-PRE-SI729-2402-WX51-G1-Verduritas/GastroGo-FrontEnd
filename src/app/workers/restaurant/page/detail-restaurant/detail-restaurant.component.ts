@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import {SideNavigatorBarComponent} from "../../../../public/components/side-navigator-bar/side-navigator-bar.component";
+import {RouterLink, RouterModule} from "@angular/router";
 
 @Component({
   selector: 'app-detail-restaurant',
   standalone: true,
-  imports: [],
+  imports: [SideNavigatorBarComponent,RouterLink],
   templateUrl: './detail-restaurant.component.html',
   styleUrl: './detail-restaurant.component.css'
 })

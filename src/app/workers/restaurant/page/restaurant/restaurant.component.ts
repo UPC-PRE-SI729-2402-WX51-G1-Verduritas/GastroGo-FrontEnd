@@ -11,6 +11,7 @@ import { MatSelectModule } from '@angular/material/select';
 import {MatCard} from "@angular/material/card";
 import {MatIcon} from "@angular/material/icon";
 import {SideNavigatorBarComponent} from "../../../../public/components/side-navigator-bar/side-navigator-bar.component";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-restaurant',
@@ -28,7 +29,8 @@ import {SideNavigatorBarComponent} from "../../../../public/components/side-navi
     MatSelectModule,
     MatCard,
     MatIcon,
-    SideNavigatorBarComponent
+    SideNavigatorBarComponent,
+    RouterLink
   ],
   templateUrl: './restaurant.component.html',
   styleUrl: './restaurant.component.css'
