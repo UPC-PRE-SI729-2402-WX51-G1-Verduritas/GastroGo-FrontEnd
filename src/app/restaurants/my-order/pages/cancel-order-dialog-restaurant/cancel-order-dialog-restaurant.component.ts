@@ -6,7 +6,7 @@ import {SideNavigatorBarComponent} from "../../../../public/components/side-navi
 import {RouterLink} from "@angular/router";
 
 @Component({
-  selector: 'app-cancel-order-dialog',
+  selector: 'app-cancel-order-dialog-restaurant',
   standalone: true,
   imports:  [
   MatCard,
@@ -15,10 +15,10 @@ import {RouterLink} from "@angular/router";
   SideNavigatorBarComponent,
   RouterLink
 ],
-  templateUrl: './cancel-order-dialog.component.html',
-  styleUrl: './cancel-order-dialog.component.css'
+  templateUrl: './cancel-order-dialog-restaurant.component.html',
+  styleUrl: './cancel-order-dialog-restaurant.component.css'
 })
-export class CancelOrderDialogComponent {
+export class CancelOrderDialogRestaurantComponent {
 
   closeDialog() {
 

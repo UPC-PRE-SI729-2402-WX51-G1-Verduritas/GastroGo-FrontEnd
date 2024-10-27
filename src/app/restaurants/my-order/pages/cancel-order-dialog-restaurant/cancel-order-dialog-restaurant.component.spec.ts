@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CancelOrderDialogComponent } from './cancel-order-dialog.component';
+import { CancelOrderDialogRestaurantComponent } from './cancel-order-dialog-restaurant.component';
 
 describe('CancelOrderDialogComponent', () => {
-  let component: CancelOrderDialogComponent;
-  let fixture: ComponentFixture<CancelOrderDialogComponent>;
+  let component: CancelOrderDialogRestaurantComponent;
+  let fixture: ComponentFixture<CancelOrderDialogRestaurantComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CancelOrderDialogComponent]
+      imports: [CancelOrderDialogRestaurantComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CancelOrderDialogComponent);
+    fixture = TestBed.createComponent(CancelOrderDialogRestaurantComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
