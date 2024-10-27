@@ -2,7 +2,9 @@
 
 
     <div class="profile-form-container">
+      <app-side-navigator-bar></app-side-navigator-bar>
         <div class ="container-son" >
+
             <div class = "tittle">
                 <h2 > Order Details</h2>
                 <p>Check the details of your order or cancel it </p>
@@ -17,7 +19,7 @@
                 <div class="right-section">
                     <p>Order Id: #00000001</p>
                     <p>Status: In process</p>
-                    <a href="#">Check the tracker</a>
+                    <a href="/order-tracker">Check the tracker</a>
                 </div>
 
             </div>
@@ -58,7 +60,7 @@
 
 
             <div class="buttons">
-                <button>Go back to Orders</button>
+              <button class="read-more-button" [routerLink]="['/order']">Go Back To Orders</button>
                 <button>Cancel Order</button>
             </div>
         </div>

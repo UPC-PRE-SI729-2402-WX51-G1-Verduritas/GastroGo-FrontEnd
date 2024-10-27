@@ -19,7 +19,7 @@
                 <p><strong>Status:</strong> In Process</p>
                 <p><strong>Date:</strong> 08/10/2024</p>
               </div>
-              <button mat-button class="read-more-button" (click)="onSeeDetails()"><p>See details</p></button>
+              <a class="read-more-button" [routerLink]="['/order-details']">See details</a>
             </div>
           </div>
         </mat-card>
@@ -36,7 +36,7 @@
                 <p><strong>Status:</strong> In Process</p>
                 <p><strong>Date:</strong> 08/10/2024</p>
               </div>
-              <button mat-button class="read-more-button"><p>See details</p></button>
+              <a class="read-more-button" [routerLink]="['/order-details']">See details</a>
             </div>
           </div>
         </mat-card>

@@ -24,6 +24,9 @@ import {LeaderComponent} from "./workers/team-activities/pages/leader/leader.com
 import {MemberComponent} from "./workers/team-activities/pages/member/member.component";
 import {MenuComponent} from "./restaurants/menu/pages/menu/menu/menu.component";
 import {RestaurantProfileComponent} from "./restaurants/profile/restaurant-profile/restaurant-profile.component";
+import {OrderRestaurantComponent} from "./restaurants/my-order/pages/order/order-restaurant.component";
+import { CancelOrderDialogRestaurantComponent} from "./restaurants/my-order/pages/cancel-order-dialog/cancel-order-dialog-restaurant.component";
+import {OrderTrackerComponent} from "./workers/my-order/pages/order-tracker/order-tracker.component";
 export const routes: Routes = [
   {path:'home',component: HomeComponent},
   {path:'profile',component: ProfileComponent},
@@ -48,7 +51,9 @@ export const routes: Routes = [
   {path: 'menu', component: MenuComponent},
   {path: '', redirectTo: 'log-in', pathMatch: 'full' },
   { path:'order-details-restaurant',component: OrderDetailsRestaurantComponent},
-  {path:'restaurant-profile', component:RestaurantProfileComponent}
-
+  {path:'restaurant-profile', component:RestaurantProfileComponent},
+{path:'order-restaurant',component: OrderRestaurantComponent},
+  {path:'cancel-order-dialog',component: CancelOrderDialogRestaurantComponent},
+  {path:'order-tracker',component: OrderTrackerComponent},
 
 ];
