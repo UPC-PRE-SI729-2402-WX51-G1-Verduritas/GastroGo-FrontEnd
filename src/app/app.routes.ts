@@ -23,6 +23,7 @@ import {CreateTeamComponent} from "./workers/team-activities/components/create-t
 import {LeaderComponent} from "./workers/team-activities/pages/leader/leader.component";
 import {MemberComponent} from "./workers/team-activities/pages/member/member.component";
 import {MenuComponent} from "./restaurants/menu/pages/menu/menu/menu.component";
+import {RestaurantProfileComponent} from "./restaurants/profile/restaurant-profile/restaurant-profile.component";
 export const routes: Routes = [
   {path:'home',component: HomeComponent},
   {path:'profile',component: ProfileComponent},
@@ -47,6 +48,7 @@ export const routes: Routes = [
   {path: 'menu', component: MenuComponent},
   {path: '', redirectTo: 'log-in', pathMatch: 'full' },
   { path:'order-details-restaurant',component: OrderDetailsRestaurantComponent},
+  {path:'restaurant-profile', component:RestaurantProfileComponent}
 
 
 ];
