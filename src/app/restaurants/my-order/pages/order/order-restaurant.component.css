@@ -78,16 +78,20 @@
   margin-top: 30px;
 }
 
-.read-more-button {
-  background-color: #FF8C00;
-  border-radius: 5px;
-  padding: 16px 70px;
-  border: none;
-  font-size: 14px;
-  cursor: pointer;
-  margin-top: 10px;
-  font-weight: bold;
-}
+
+  .read-more-button {
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 12px 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    max-width: 100px;
+    background-color: #FF8C00;
+  }
 
 .read-more-button p {
   color: white;
