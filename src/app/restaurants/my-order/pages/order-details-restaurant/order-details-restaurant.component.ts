@@ -14,4 +14,6 @@ import {RouterLink} from "@angular/router";
 })
 export class OrderDetailsRestaurantComponent {
   cancelButton: boolean=false;
+    UpdateButton: boolean=false;
+
 }
