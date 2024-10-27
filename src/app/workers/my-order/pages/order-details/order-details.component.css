@@ -65,7 +65,7 @@
 }
 
 .left-section h3, .left-section p, .right-section p {
-    margin: 7px 0; /* Ajusta los márgenes */
+    margin: 7px 0; 
 }
 .left-section, .right-section {
     width: 50%;
