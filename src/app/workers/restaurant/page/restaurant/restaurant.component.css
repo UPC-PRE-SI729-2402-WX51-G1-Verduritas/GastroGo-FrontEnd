@@ -3,17 +3,19 @@
   flex-basis: content;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10%;
   width: 100%;
   height: 100%;
-  padding-top: 100px;
+  align-items: center;
+  margin: auto;
 }
 
 .profile-header {
   background-color: #FF7338;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
 }
 
 .profile-header h2 {
