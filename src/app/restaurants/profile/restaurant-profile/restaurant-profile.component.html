@@ -1,0 +1,109 @@
+<div class="profile">
+
+<div class="profile-container">
+  <div class="header-container">
+    <div class="header">
+      <h1>Profile</h1>
+    </div>
+  </div>
+
+  <div class="profile-container2">
+    <div class="form-section">
+      <div class="input-row">
+        <div class="full-width">
+          <label>Name</label>
+          <mat-form-field appearance="fill" class="full-width">
+            <input matInput placeholder="Name" [(ngModel)]="name">
+          </mat-form-field>
+        </div>
+
+        <div class="full-width">
+          <label>Last Names</label>
+          <mat-form-field appearance="fill" class="full-width">
+            <input matInput placeholder="Last Names" [(ngModel)]="lastNames">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="input-row">
+        <div class="full-width">
+          <label>Restaurant Name</label>
+          <mat-form-field appearance="fill" class="full-width">
+            <input matInput placeholder="Restaurant Name" [(ngModel)]="restaurantName">
+          </mat-form-field>
+        </div>
+
+        <div class="full-width">
+          <label>Telephone Number</label>
+          <mat-form-field appearance="fill" class="full-width">
+            <input matInput placeholder="Telephone Number" [(ngModel)]="telephoneNumber">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="full-width">
+        <label>Address</label>
+        <mat-form-field appearance="fill" class="full-width">
+          <input matInput placeholder="Address" [(ngModel)]="address">
+        </mat-form-field>
+      </div>
+
+      <div class="full-width">
+        <label>Email</label>
+        <mat-form-field appearance="fill" class="full-width">
+          <input matInput type="email" placeholder="Email" [(ngModel)]="email">
+        </mat-form-field>
+      </div>
+
+      <div class="full-width">
+        <label>Enter your new password</label>
+        <mat-form-field appearance="fill" class="full-width">
+          <input matInput type="password" placeholder="Enter your new password" [(ngModel)]="password">
+        </mat-form-field>
+      </div>
+
+      <div class="input-row">
+        <div class="full-width">
+          <label>DNI</label>
+          <mat-form-field appearance="fill" class="full-width">
+            <input matInput placeholder="DNI" [(ngModel)]="dni">
+          </mat-form-field>
+        </div>
+
+        <div class="full-width">
+          <label>RUC</label>
+          <mat-form-field appearance="fill" class="full-width">
+            <input matInput placeholder="RUC" [(ngModel)]="ruc">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <button mat-raised-button color="primary" class="save-button">Save</button>
+    </div>
+
+    <div class="subscription-section">
+      <div class="photo-section">
+        <img src="/../assets/images/restaurant-profile.jpeg" alt="Restaurant Photo" class="restaurant-photo">
+        <button mat-raised-button color="accent" class="upload-button">Upload photo</button>
+        <button mat-raised-button color="warn" class="delete-button">Delete photo</button>
+      </div>
+
+      <div class="plan-section">
+        <div class="header-subscription">
+          <p>Your subscription</p>
+        </div>
+        <div class="subscription-box">
+          <div class="subscription-details">
+            <p>Restaurant</p>
+            <p>S/. 400 monthly</p>
+          </div>
+          <div class="payment-options">
+            <mat-checkbox [(ngModel)]="monthlyPayment">Automatic Monthly Payment</mat-checkbox>
+            <mat-checkbox [(ngModel)]="annualPayment">Automatic Annual Payment</mat-checkbox>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

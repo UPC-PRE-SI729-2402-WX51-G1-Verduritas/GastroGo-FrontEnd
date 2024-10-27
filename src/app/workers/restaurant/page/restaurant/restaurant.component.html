@@ -1,31 +1,24 @@
+<div style="display: flex; flex-direction: row;">
+  <app-side-navigator-bar></app-side-navigator-bar>
 <div class="profile-container">
   <div class="profile-header">
     <h2>Restaurants</h2>
   </div>
 
   <div class="component-container">
-
     <div class="search-filters-container">
       <div class="search-container">
-        <label for="typeOfFood">Type of food</label>
+        <label for="typeOfFood">Search for a restaurant</label>
         <div class="search-button-container">
           <form class="search-autocomplete">
             <input
               type="text"
               placeholder="delicious search"
-              aria-label="Searching"
-              [(ngModel)]="searchQuery"
-              (input)="filterOptions()">
-            <ul *ngIf="filteredOptions.length > 0">
-              <li *ngFor="let option of filteredOptions" (click)="selectOption(option)">
-                {{option}}
-              </li>
-            </ul>
+              aria-label="Searching">
           </form>
           <button class="save-button" (click)="search()">Search</button>
         </div>
       </div>
-
 
       <div class="select-container">
         <label for="typeOfFood">Type of food</label>
@@ -42,31 +35,60 @@
       </div>
     </div>
 
-    <div class="Cards">
+    <div class="cards">
+      <!--card-->
       <div class="restaurant-card">
-        <img class="restaurant-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zXJNyANS8TG8NHjHX4hUdaU_Q6VQSKaMQg&s" alt="Restaurant Image">
-
-        <div class="restaurant-info">
-          <h2 class="restaurant-title">Restaurant Name</h2>
-          <p class="restaurant-address">Address: 1234 Food St, Culinary City</p>
-          <p class="restaurant-schedule">Schedule: 10:00 AM - 10:00 PM</p>
-          <p class="restaurant-rating">Rating: ⭐⭐⭐⭐</p>
-          <button class="read-more-button">Read More</button>
-        </div>
+        <mat-card>
+          <div class="card-content">
+            <div class="image-container">
+              <img src="assets/images/Palm_&_Vine.png" alt="Restaurant Image"/>
+            </div>
+            <div class="info-container">
+              <p class="restaurant-title">Ochi</p>
+              <div class="details-container">
+                <p> Address: Santiago de Surco, El Polo, 101</p>
+                <p> Schedule: 12:00 - 18:00</p>
+                <p class="rating-label">Rating:
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                </p>
+              </div>
+              <button class="read-more-button"><p>Read more</p></button>
+            </div>
+          </div>
+        </mat-card>
       </div>
-
+      <!--card-->
       <div class="restaurant-card">
-        <img class="restaurant-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zXJNyANS8TG8NHjHX4hUdaU_Q6VQSKaMQg&s" alt="Restaurant Image">
-
-        <div class="restaurant-info">
-          <h2 class="restaurant-title">Restaurant Name</h2>
-          <p class="restaurant-address">Address: 1234 Food St, Culinary City</p>
-          <p class="restaurant-schedule">Schedule: 10:00 AM - 10:00 PM</p>
-          <p class="restaurant-rating">Rating: ⭐⭐⭐⭐</p>
-          <button class="read-more-button">Read More</button>
-        </div>
+        <mat-card>
+          <div class="card-content">
+            <div class="image-container">
+              <img src="assets/images/Palm_&_Vine.png" alt="Restaurant Image"/>
+            </div>
+            <div class="info-container">
+              <p class="restaurant-title">Ochi</p>
+              <div class="details-container">
+                <p> Address: Santiago de Surco, El Polo, 101</p>
+                <p> Schedule: 12:00 - 18:00</p>
+                <p class="rating-label">Rating:
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                </p>
+              </div>
+              <button class="read-more-button"><p>Read more</p></button>
+            </div>
+          </div>
+        </mat-card>
       </div>
+      <!--card-->
     </div>
 
   </div>
+</div>
 </div>

@@ -1,0 +1,34 @@
+<div class="create-a-team">
+  <app-side-navigator-bar></app-side-navigator-bar>
+<div class="create-container">
+  <div class="create-header">
+    Team Leader
+  </div>
+  <div class="create-content">
+    <div class="card-container">
+      <mat-card>
+        <div class="card-header">
+          Create a Team
+        </div>
+        <div class="card">
+          <div class="create-team-form">
+
+            <label for="teamName" class="label">Enter the name of your team:</label>
+            <mat-form-field appearance="fill" class="input-field">
+              <mat-label>Enter team name here</mat-label>
+              <input matInput [(ngModel)]="teamName" id="teamName" placeholder="Enter team name here">
+            </mat-form-field>
+          </div>
+
+          <button mat-raised-button color="primary" class="create-button" (click)="createTeam('leader')">
+            Create
+          </button>
+        </div>
+      </mat-card>
+    </div>
+    <p class="description">
+      *As the leader of your team, you will have to choose a name. To let your teammates join it, you should share the special code provided.
+    </p>
+  </div>
+</div>
+</div>

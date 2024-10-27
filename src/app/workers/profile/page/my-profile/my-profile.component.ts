@@ -7,7 +7,7 @@ import {SideNavigatorBarComponent} from "../../../../public/components/side-navi
 @Component({
   selector: 'app-profile',
   standalone: true,
-    imports: [CommonModule, MatInputModule, MatButtonModule, MatCheckboxModule, SideNavigatorBarComponent],
+  imports: [CommonModule, MatInputModule, MatButtonModule, MatCheckboxModule, SideNavigatorBarComponent],
   templateUrl: './my-profile.component.html',
   styleUrl: './my-profile.component.css'
 })

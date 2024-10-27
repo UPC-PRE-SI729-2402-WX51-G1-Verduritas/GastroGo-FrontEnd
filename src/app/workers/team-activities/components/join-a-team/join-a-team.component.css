@@ -1,0 +1,111 @@
+.join-a-team-container{
+  display: flex;
+  flex-direction: row;
+}
+.join-container{
+  padding-left: 250px;
+  margin-top: 30px;
+  margin-left: 80px;
+
+}
+
+.join-header {
+  background-color: #FF7338;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+  max-width: 800px;
+  text-align: center;
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: bold;
+
+}
+
+.join-content {
+  background-color: #FFCFBB;
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
+  max-width: 800px;
+  min-height: 780px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+mat-card {
+  margin-top: 50px;
+  height: auto;
+}
+
+.card-header {
+  background-color: #FF7338;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: bold;
+  min-width: 714px;
+  max-height: 56px;
+}
+
+.card {
+  background-color: #FAEAE7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 720px;
+  margin-bottom: 0px;
+}
+
+.join-team-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.label {
+  margin-right: 10px;
+}
+
+.join-button {
+  background-color: #FF7338 !important;
+  color: #FFFFFF !important;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 200px;
+  align-self: center;
+  text-align: center;
+}
+
+.join-button:hover {
+  background-color: #FF5A19;
+}
+
+
+.input-field {
+  width: 300px;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 0px;
+}

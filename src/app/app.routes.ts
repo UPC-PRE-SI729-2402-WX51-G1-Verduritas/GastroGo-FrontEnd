@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import {RolSectionComponent} from "./workers/team-activities/rol-section/rol-section.component";
+import {RolSectionComponent} from "./workers/team-activities/pages/rol-section/rol-section.component";
 import {HomeComponent} from "./public/pages/home/home.component";
 import {ProfileComponent} from "./workers/profile/page/my-profile/my-profile.component";
 import {OrderComponent}  from "./workers/my-order/pages/order/order.component";
@@ -14,13 +14,27 @@ import {RecoverPasswordComponent} from "./iam/components/recover-password/recove
 import {SignUpRestaurantComponent} from "./iam/components/sign-up-restaurant/sign-up-restaurant.component";
 import {SignUpWorkersComponent} from "./iam/components/sign-up-workers/sign-up-workers.component";
 import {SuccessfulRecoverPasswordComponent} from "./iam/components/successful-recover-password/successful-recover-password.component";
-
+import {OrderDetailsComponent} from "./workers/my-order/pages/order-details/order-details.component";
+import {
+  OrderDetailsRestaurantComponent
+} from "./restaurants/my-order/pages/order-details-restaurant/order-details-restaurant.component";
+import {JoinATeamComponent} from "./workers/team-activities/components/join-a-team/join-a-team.component";
+import {CreateTeamComponent} from "./workers/team-activities/components/create-team/create-team.component";
+import {LeaderComponent} from "./workers/team-activities/pages/leader/leader.component";
+import {MemberComponent} from "./workers/team-activities/pages/member/member.component";
+import {MenuComponent} from "./restaurants/menu/pages/menu/menu/menu.component";
+import {RestaurantProfileComponent} from "./restaurants/profile/restaurant-profile/restaurant-profile.component";
 export const routes: Routes = [
   {path:'home',component: HomeComponent},
   {path:'profile',component: ProfileComponent},
   {path:'restaurant',component: RestaurantComponent},
   {path:'role',component: RolSectionComponent},
+  {path: 'join-a-team', component: JoinATeamComponent },
+  {path: 'create-team', component: CreateTeamComponent },
+  {path: 'leader', component: LeaderComponent},
+  {path: 'member', component: MemberComponent},
   {path:'order',component: OrderComponent},
+  { path:'order-details',component: OrderDetailsComponent},
   {path: 'log-in', component: LogInComponent},
   {path: 'sign-up', component: SignUpComponent},
   {path: 'auth', component: AuthBackgroundComponent},
@@ -31,5 +45,10 @@ export const routes: Routes = [
   {path: 'sign-up-restaurant', component: SignUpRestaurantComponent},
   {path: 'sign-up-workers', component: SignUpWorkersComponent},
   {path: 'successful-recover-password', component: SuccessfulRecoverPasswordComponent},
+  {path: 'menu', component: MenuComponent},
   {path: '', redirectTo: 'log-in', pathMatch: 'full' },
+  { path:'order-details-restaurant',component: OrderDetailsRestaurantComponent},
+  {path:'restaurant-profile', component:RestaurantProfileComponent}
+
+
 ];
