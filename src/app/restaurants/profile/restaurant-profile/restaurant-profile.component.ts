@@ -4,6 +4,9 @@ import {MatInput} from "@angular/material/input";
 import {MatButton} from "@angular/material/button";
 import {FormsModule} from "@angular/forms";
 import {MatCheckbox} from "@angular/material/checkbox";
+import {
+  SideNavigatorBarRestaurantComponent
+} from "../../../public/components/side-navigator-bar-restaurant/side-navigator-bar-restaurant.component";
 
 @Component({
   selector: 'app-restaurant-profile',
@@ -14,6 +17,7 @@ import {MatCheckbox} from "@angular/material/checkbox";
     MatButton,
     MatInput,
     MatFormField,
+    SideNavigatorBarRestaurantComponent,
 
   ],
   templateUrl: './restaurant-profile.component.html',

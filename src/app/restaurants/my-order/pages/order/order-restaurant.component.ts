@@ -4,6 +4,9 @@ import {MatIcon} from "@angular/material/icon";
 import {MatButton} from "@angular/material/button";
 import {SideNavigatorBarComponent} from "../../../../public/components/side-navigator-bar/side-navigator-bar.component";
 import {RouterLink} from "@angular/router";
+import {
+  SideNavigatorBarRestaurantComponent
+} from "../../../../public/components/side-navigator-bar-restaurant/side-navigator-bar-restaurant.component";
 
 @Component({
   selector: 'app-order-restaurant',
@@ -13,7 +16,8 @@ import {RouterLink} from "@angular/router";
     MatIcon,
     MatButton,
     SideNavigatorBarComponent,
-    RouterLink
+    RouterLink,
+    SideNavigatorBarRestaurantComponent
   ],
   templateUrl: './order-restaurant.component.html',
   styleUrl: './order-restaurant.component.css'

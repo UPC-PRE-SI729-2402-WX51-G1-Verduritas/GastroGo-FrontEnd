@@ -33,7 +33,10 @@ import {PaymentMethodComponent} from "./workers/profile/page/payment-method/paym
 import {
   OrderDetailsWorkerComponent
 } from "./workers/restaurant/page/order/order-details-worker/order-details-worker.component";
+import {HomeRestaurantComponent} from "./restaurants/home/page/home/home-restaurant.component";
 export const routes: Routes = [
+
+  //Worker
   {path:'home',component: HomeComponent},
   {path:'profile',component: ProfileComponent},
   {path:'restaurant',component: RestaurantComponent},
@@ -44,16 +47,8 @@ export const routes: Routes = [
   {path: 'member', component: MemberComponent},
   {path:'order',component: OrderComponent},
   { path:'order-details',component: OrderDetailsComponent},
-  {path: 'log-in', component: LogInComponent},
-  {path: 'sign-up', component: SignUpComponent},
-  {path: 'auth', component: AuthBackgroundComponent},
-  {path: 'payment', component: PaymentComponent},
-  {path: 'plan-restaurant', component: PlanRestaurantComponent},
-  {path: 'plan-workers', component: PlanWorkersComponent},
-  {path: 'recover-password', component: RecoverPasswordComponent},
-  {path: 'sign-up-restaurant', component: SignUpRestaurantComponent},
-  {path: 'sign-up-workers', component: SignUpWorkersComponent},
-  {path: 'successful-recover-password', component: SuccessfulRecoverPasswordComponent},
+
+  //Restaurant
   {path: 'menu', component: MenuComponent},
   {path:'order-details-restaurant',component: OrderDetailsRestaurantComponent},
   {path:'restaurant-profile', component:RestaurantProfileComponent},
@@ -64,6 +59,20 @@ export const routes: Routes = [
   {path: 'detail-restaurant', component: DetailRestaurantComponent},
   {path: 'payment-method', component: PaymentMethodComponent},
   {path: 'order-details-worker', component: OrderDetailsWorkerComponent},
+  {path: 'home-restaurant', component: HomeRestaurantComponent},
+
+
+  //Iam
+  {path: 'log-in', component: LogInComponent},
+  {path: 'sign-up', component: SignUpComponent},
+  {path: 'auth', component: AuthBackgroundComponent},
+  {path: 'payment', component: PaymentComponent},
+  {path: 'plan-restaurant', component: PlanRestaurantComponent},
+  {path: 'plan-workers', component: PlanWorkersComponent},
+  {path: 'recover-password', component: RecoverPasswordComponent},
+  {path: 'sign-up-restaurant', component: SignUpRestaurantComponent},
+  {path: 'sign-up-workers', component: SignUpWorkersComponent},
+  {path: 'successful-recover-password', component: SuccessfulRecoverPasswordComponent},
 
   {path: '', redirectTo: 'log-in', pathMatch: 'full' },
 ];
