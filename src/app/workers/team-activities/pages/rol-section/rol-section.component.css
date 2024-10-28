@@ -1,3 +1,7 @@
+.conteiner-navigator-view{
+  display: flex;
+  flex-direction: row;
+}
 .rol-container {
   display: flex;
   justify-content: flex-start;

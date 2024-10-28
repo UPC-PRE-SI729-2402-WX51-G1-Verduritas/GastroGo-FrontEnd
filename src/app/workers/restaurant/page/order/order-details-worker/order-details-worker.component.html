@@ -1,4 +1,4 @@
-<div style="display: flex; flex-direction: row;">
+<div class="conteiner-navigator-view">
   <app-side-navigator-bar></app-side-navigator-bar>
   <div class="profile-container">
 
@@ -12,16 +12,22 @@
         </div>
         <div class="white-rectangle">
           <div class="left-section">
-            <h3>Restaurant: Ochi</h3>
+            <p>Restaurant: Ochi</p>
             <p>Date: 08/10/2024</p>
             <p>Delivery Time: 14:00</p>
           </div>
           <div class="right-section">
             <p>Order Id: #00000001</p>
             <p>Status: In process</p>
-            <a href="/order-tracker">Check the tracker</a>
+            <p></p>
           </div>
         </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between" class="edit-button">
+          <p></p>
+          <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="edit"></mat-icon>
+        </div>
+
         <div class="white-rectangle">
           <div class="menu-section">
             <h3>Appetizers</h3>
@@ -47,19 +53,37 @@
             </div>
           </div>
         </div>
-        <div class="buttons">
 
-          <button class="read-more-button" [routerLink]="['/order']">Go Back To Orders</button>
-          <button class="read-more-button" (click)="cancelButton=true">Cancel Order</button>
-          <div *ngIf="cancelButton" class="modal-overlay">
-            <div class="modal">
-              <h2>Are you sure you want to cancel the order?</h2>
-              <p>We will notify the client about the matter so they have time to re-order.</p>
-              <button class="modal-button" [routerLink]="['/order']">Accept</button>
-              <button class="modal-button" [routerLink]="['/order']">Cancel</button>
-            </div>
-          </div>
+        <div class="buttons">
+          <button class="read-more-button" [routerLink]="['/menu']">Cancel</button>
+          <button class="read-more-button" (click)="PaymentButton=true">Pay Order</button>
         </div>
+
+        <div *ngIf="PaymentButton" class="modal-overlay">
+          <div class="modal">
+            <div class="modal-sub-sub" >
+              <h2>Details of the Payment</h2>
+              <p>*Remember that payment will be charged from each team member's (including leader) account on an equal manner.</p>
+            </div>
+            <div class="modal-sub">
+                <div class="modal-sub-1">
+                  <p>Legends</p>
+                  <p>Order #00000001</p>
+                  <p>Each member pays:</p>
+                  <p>Each member pays for tip:</p>
+                </div>
+                <div class="modal-sub-1">
+                  <p>25 workers</p>
+                  <p>Total: S/. 400.50</p>
+                  <p>S/. 16.02</p>
+                  <p>S/. 07.00</p>
+                </div>
+            </div>
+            <button class="modal-button" [routerLink]="['/menu']">Confirm Payment</button>
+          </div>
+
+        </div>
+
       </div>
     </div>
   </div>

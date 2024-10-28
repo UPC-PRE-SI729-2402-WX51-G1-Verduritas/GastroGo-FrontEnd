@@ -1,10 +1,14 @@
+.conteiner-navigator-view{
+  display: flex;
+  flex-direction: row;
+}
 .restaurant-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   border-radius: 10px;
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -12,17 +16,18 @@
   display: flex;
   width: 100%;
   background-color: #FFCFBB;
-  padding: 20px;
+  padding: 30px;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .restaurant-image {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 10px;
   margin-right: 20px;
   object-fit: cover;
+  padding: 20px;
 }
 
 .restaurant-details h2 {
@@ -60,7 +65,7 @@
 .comments-section {
   width: 100%;
   background-color: #FFCFBB;
-  padding: 20px;
+  padding: 30px;
 }
 
 .comments-section h3 {
