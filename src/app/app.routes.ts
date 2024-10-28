@@ -29,6 +29,7 @@ import { CancelOrderDialogRestaurantComponent} from "./restaurants/my-order/page
 import {OrderTrackerComponent} from "./workers/my-order/pages/order-tracker/order-tracker.component";
 import {CancelOrderDialogWorkersComponent} from "./workers/my-order/pages/cancel-order-dialog-workers/cancel-order-dialog-workers.component";
 import {DetailRestaurantComponent} from "./workers/restaurant/page/detail-restaurant/detail-restaurant.component";
+import {PaymentMethodComponent} from "./workers/profile/page/payment-method/payment-method.component";
 export const routes: Routes = [
   {path:'home',component: HomeComponent},
   {path:'profile',component: ProfileComponent},
@@ -58,6 +59,7 @@ export const routes: Routes = [
   {path:'order-tracker',component: OrderTrackerComponent},
   {path:'cancel-order-dialog-workers',component: CancelOrderDialogWorkersComponent},
   {path: 'detail-restaurant', component: DetailRestaurantComponent},
+  {path: 'payment-method', component: PaymentMethodComponent},
 
   {path: '', redirectTo: 'log-in', pathMatch: 'full' },
 ];
