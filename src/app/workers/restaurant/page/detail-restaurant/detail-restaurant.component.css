@@ -1,3 +1,7 @@
+.conteiner-navigator-view{
+  display: flex;
+  flex-direction: row;
+}
 .restaurant-container {
   display: flex;
   flex-direction: column;

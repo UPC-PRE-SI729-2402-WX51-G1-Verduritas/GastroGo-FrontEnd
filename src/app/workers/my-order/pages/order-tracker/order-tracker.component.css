@@ -1,4 +1,7 @@
-
+.conteiner-navigator-view{
+  display: flex;
+  flex-direction: row;
+}
 .tracker-container {
   background-color: #ffe0cc;
   padding: 20px;

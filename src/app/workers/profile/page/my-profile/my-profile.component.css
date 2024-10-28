@@ -1,3 +1,7 @@
+.conteiner-navigator-view{
+  display: flex;
+  flex-direction: row;
+}
 .profile-container {
   display: flex;
   flex-basis: content;

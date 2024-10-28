@@ -1,3 +1,8 @@
+.conteiner-navigator-view{
+  display: flex;
+  flex-direction: row;
+}
+
 .profile-container {
   flex-basis: content;
   flex-direction: column;
@@ -151,7 +156,7 @@ button {
 
 
 .modal {
-  background-color: #ff7f50; 
+  background-color: #ff7f50;
   padding: 20px;
   border-radius: 8px;
   width: 300px;
