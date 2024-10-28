@@ -29,8 +29,11 @@
           <input type="text" id="ccv" placeholder="CCV">
         </div>
       </div>
-      <button type="submit" class="confirm-button">Confirm</button>
+      <button type="button" class="confirm-button" (click)="confirmPayment()">Confirm</button>
     </form>
   </div>
 </div>
 </div>
+
+<!-- Componente modal -->
+<app-payment-method-added *ngIf="showModal" (close)="closeModal()"></app-payment-method-added>
