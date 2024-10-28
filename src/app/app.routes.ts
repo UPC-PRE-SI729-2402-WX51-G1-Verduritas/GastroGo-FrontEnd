@@ -30,6 +30,9 @@ import {OrderTrackerComponent} from "./workers/my-order/pages/order-tracker/orde
 import {CancelOrderDialogWorkersComponent} from "./workers/my-order/pages/cancel-order-dialog-workers/cancel-order-dialog-workers.component";
 import {DetailRestaurantComponent} from "./workers/restaurant/page/detail-restaurant/detail-restaurant.component";
 import {PaymentMethodComponent} from "./workers/profile/page/payment-method/payment-method.component";
+import {
+  OrderDetailsWorkerComponent
+} from "./workers/restaurant/page/order/order-details-worker/order-details-worker.component";
 export const routes: Routes = [
   {path:'home',component: HomeComponent},
   {path:'profile',component: ProfileComponent},
@@ -60,6 +63,7 @@ export const routes: Routes = [
   {path:'cancel-order-dialog-workers',component: CancelOrderDialogWorkersComponent},
   {path: 'detail-restaurant', component: DetailRestaurantComponent},
   {path: 'payment-method', component: PaymentMethodComponent},
+  {path: 'order-details-worker', component: OrderDetailsWorkerComponent},
 
   {path: '', redirectTo: 'log-in', pathMatch: 'full' },
 ];
