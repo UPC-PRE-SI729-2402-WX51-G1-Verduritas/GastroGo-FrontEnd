@@ -1,0 +1,22 @@
+<div class="recent-orders-wrapper">
+  <!-- Header -->
+  <div class="header">
+    <h1>Recent Orders</h1>
+  </div>
+
+  <!-- Content -->
+  <div class="order-list">
+    <div *ngFor="let order of orders" class="order-card">
+      <div class="card-content">
+        <div class="card-order-icon">
+          <mat-icon class="order-icon">assignment</mat-icon>
+        </div>
+        <div class="card-order-info">
+          <h2>Order #{{ order.id }}</h2>
+          <p>Status: {{ order.status }}</p>
+          <p>Team: {{ order.team }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

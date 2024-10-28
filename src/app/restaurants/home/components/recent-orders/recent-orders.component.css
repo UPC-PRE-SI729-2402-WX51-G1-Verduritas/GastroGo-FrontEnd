@@ -1,0 +1,98 @@
+.recent-orders-wrapper {
+  min-width: 550px; /* Aumenta el ancho */
+  width: 100%;
+  background-color: #ffcfbb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  min-height: 850px;
+  margin-left: 0px;
+
+}
+
+.header {
+  background-color: #ff5a22;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
+  margin: 0;
+  width: 100%;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.3rem; /* Mismo tamaño de fuente */
+  padding: 20px 0; /* Misma cantidad de padding */
+}
+
+.order-list {
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.order-card {
+  width: 100%;
+  background-color: #faeae7;
+  border-radius: 5px;
+  padding: 15px 25px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-order-icon {
+  flex-shrink: 0; /* Evita que el contenedor se reduzca */
+  width: 80px; /* Asegura suficiente espacio para el ícono */
+  height: 80px; /* Altura suficiente para el ícono */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible; /* Permite que el ícono no se corte */
+}
+
+.order-icon {
+  font-size: 100px; /* Tamaño del ícono */
+  line-height: 60px; /* Asegura que la altura de línea coincida con el ícono */
+  width: 60px; /* Asegura un ancho adecuado */
+  height: 60px; /* Asegura una altura adecuada */
+  display: inline-flex; /* Asegura que el ícono se centre correctamente */
+  justify-content: center; /* Centra el ícono */
+  align-items: center; /* Centra el ícono */
+  overflow: visible; /* Asegura que el contenido no se corte */
+  color: #333; /* Color del ícono */
+  margin-left: 50px;
+}
+
+.mat-icon {
+  vertical-align: middle; /* Asegura que el ícono se alinee correctamente */
+}
+
+.card-order-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.card-order-info h2 {
+  font-size: 1.5rem;
+}
+
+.card-order-info p {
+  font-size: 1.2rem;
+}
