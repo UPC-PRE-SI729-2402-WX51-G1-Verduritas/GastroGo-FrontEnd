@@ -35,6 +35,7 @@ import {
 } from "./workers/restaurant/page/order/order-details-worker/order-details-worker.component";
 import {HomeRestaurantComponent} from "./restaurants/home/page/home/home-restaurant.component";
 import {MenuListComponent} from "./restaurants/menu/pages/menu-list/menu-list.component";
+import {MenuDetailComponent} from "./restaurants/menu/pages/menu-detail/menu-detail.component";
 export const routes: Routes = [
 
   //Worker
@@ -52,6 +53,7 @@ export const routes: Routes = [
 
   //Restaurant
   {path: 'menu-list', component: MenuListComponent},
+  {path: 'menu-detail', component: MenuDetailComponent},
   {path:'order-details-restaurant',component: OrderDetailsRestaurantComponent},
   {path:'restaurant-profile', component:RestaurantProfileComponent},
   {path:'order-restaurant',component: OrderRestaurantComponent},
