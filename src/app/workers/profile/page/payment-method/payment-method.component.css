@@ -15,15 +15,27 @@
 .payment-container h2 {
   background-color: #FF7F50;
   color: white;
-  padding: 20px;
+  padding: 23px;
   margin: 0;
-  width: 92%;
+  width: 35vw;
   text-align: center;
 }
-
+.name-and-lastname {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
 .payment-form {
   background-color: #FFCFBB;
-  padding: 50px;
+  padding: 80px;
+  height: 60vh;
+  width: 29vw;
+}
+.payment-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .payment-form h3 {
@@ -43,7 +55,13 @@
 }
 
 .form-group input {
-  width: calc(100% - 20px);
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-group-number input {
+  width: calc(100% - 15px);
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
