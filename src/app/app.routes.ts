@@ -36,6 +36,7 @@ import {
 import {HomeRestaurantComponent} from "./restaurants/home/page/home/home-restaurant.component";
 import {MenuListComponent} from "./restaurants/menu/pages/menu-list/menu-list.component";
 import {MenuDetailComponent} from "./restaurants/menu/pages/menu-detail/menu-detail.component";
+import {MenuEditComponent} from "./restaurants/menu/pages/menu-edit/menu-edit.component";
 export const routes: Routes = [
 
   //Worker
@@ -50,18 +51,19 @@ export const routes: Routes = [
   {path:'order',component: OrderComponent},
   {path:'order-details',component: OrderDetailsComponent},
   {path: 'menu', component: MenuComponent},
+  {path: 'payment-method', component: PaymentMethodComponent},
+  {path: 'detail-restaurant', component: DetailRestaurantComponent},
 
   //Restaurant
   {path: 'menu-list', component: MenuListComponent},
   {path: 'menu-detail', component: MenuDetailComponent},
+  {path: 'menu-edit', component: MenuEditComponent},
   {path:'order-details-restaurant',component: OrderDetailsRestaurantComponent},
   {path:'restaurant-profile', component:RestaurantProfileComponent},
   {path:'order-restaurant',component: OrderRestaurantComponent},
   {path:'cancel-order-dialog',component: CancelOrderDialogRestaurantComponent},
   {path:'order-tracker',component: OrderTrackerComponent},
   {path:'cancel-order-dialog-workers',component: CancelOrderDialogWorkersComponent},
-  {path: 'detail-restaurant', component: DetailRestaurantComponent},
-  {path: 'payment-method', component: PaymentMethodComponent},
   {path: 'order-details-worker', component: OrderDetailsWorkerComponent},
   {path: 'home-restaurant', component: HomeRestaurantComponent},
 

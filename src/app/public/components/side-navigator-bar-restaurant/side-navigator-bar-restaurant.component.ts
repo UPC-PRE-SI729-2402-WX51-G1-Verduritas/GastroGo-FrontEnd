@@ -30,6 +30,10 @@ export class SideNavigatorBarRestaurantComponent {
 
   }
 
+  onNavigateMenu() {
+    this.router.navigate(['menu-list']).then();
+
+  }
 
   onNavigateProfile() {
     this.router.navigate(['restaurant-profile']).then();

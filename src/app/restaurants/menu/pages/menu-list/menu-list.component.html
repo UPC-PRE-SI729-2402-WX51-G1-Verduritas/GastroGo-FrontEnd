@@ -1,5 +1,5 @@
 <div class="conteiner-navigator-view">
-  <app-side-navigator-bar></app-side-navigator-bar>
+  <app-side-navigator-bar-restaurants></app-side-navigator-bar-restaurants>
 <div class="menu-container">
   <h2>Menus</h2>
   <div class="cards">
@@ -10,7 +10,7 @@
       <div class="menu-details">
         <h3>Menu #00001</h3>
         <p><strong>Date: </strong>08/10/2024</p>
-        <button class="details-button">See details</button>
+        <button class="details-button" [routerLink]="['/menu-detail']">See details</button>
       </div>
     </div>
 
@@ -21,7 +21,7 @@
       <div class="menu-details">
         <h3>Menu #00001</h3>
         <p><strong>Date: </strong>08/10/2024</p>
-        <button class="details-button">See details</button>
+        <button class="details-button" [routerLink]="['/menu-detail']">See details</button>
       </div>
     </div>
 
@@ -32,11 +32,11 @@
       <div class="menu-details">
         <h3>Menu #00001</h3>
         <p><strong>Date: </strong>08/10/2024</p>
-        <button class="details-button">See details</button>
+        <button class="details-button" [routerLink]="['/menu-detail']">See details</button>
       </div>
     </div>
 
-    <button class="add-menu-button">Add menu</button>
+    <button class="add-menu-button" [routerLink]="['/menu-edit']">Add menu</button>
   </div>
 
 </div>
