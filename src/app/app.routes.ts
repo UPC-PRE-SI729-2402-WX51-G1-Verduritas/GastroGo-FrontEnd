@@ -22,7 +22,7 @@ import {JoinATeamComponent} from "./workers/team-activities/components/join-a-te
 import {CreateTeamComponent} from "./workers/team-activities/components/create-team/create-team.component";
 import {LeaderComponent} from "./workers/team-activities/pages/leader/leader.component";
 import {MemberComponent} from "./workers/team-activities/pages/member/member.component";
-import {MenuComponent} from "./restaurants/menu/pages/menu/menu/menu.component";
+import {MenuComponent} from "./workers/restaurant/page/menu/menu.component";
 import {RestaurantProfileComponent} from "./restaurants/profile/restaurant-profile/restaurant-profile.component";
 import {OrderRestaurantComponent} from "./restaurants/my-order/pages/order/order-restaurant.component";
 import { CancelOrderDialogRestaurantComponent} from "./restaurants/my-order/pages/cancel-order-dialog-restaurant/cancel-order-dialog-restaurant.component";
