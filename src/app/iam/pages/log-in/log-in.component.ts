@@ -17,7 +17,7 @@ export class LogInComponent {
     this.router.navigate(['sign-up']);
   }
   goToHome() {
-    this.router.navigate(['home']);
+    this.router.navigate(['home-restaurant']);
   }
   goToRecoverPassword() {
     this.router.navigate(['recover-password']);

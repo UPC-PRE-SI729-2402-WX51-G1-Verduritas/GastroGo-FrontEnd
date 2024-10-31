@@ -45,6 +45,7 @@ export class SideNavigatorBarRestaurantComponent {
   }
 
   onNavigateLogout() {
+    this.router.navigate(['log-in']).then();
 
   }
 }

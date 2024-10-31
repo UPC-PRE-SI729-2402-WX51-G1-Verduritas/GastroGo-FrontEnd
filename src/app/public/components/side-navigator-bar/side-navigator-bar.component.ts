@@ -48,6 +48,6 @@ export class SideNavigatorBarComponent {
   }
 
   onNavigateLogout() {
-
+    this.router.navigate(['log-in']).then();
   }
 }

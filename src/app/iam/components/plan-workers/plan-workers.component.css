@@ -15,16 +15,11 @@
   align-items: flex-start;
   background-color: #fdeae8;
   padding: 20px;
-  margin-left: 290px;
+  margin-left: 470px;
 
 }
 
-.Logo {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 150px;
-}
+
 
 .login-section h1 {
   font-size: 45px;
@@ -34,7 +29,6 @@
 
 .plan-section {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   margin: 20px 0;
   gap: 30px;
@@ -62,7 +56,6 @@
 
 .button-group {
   display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 

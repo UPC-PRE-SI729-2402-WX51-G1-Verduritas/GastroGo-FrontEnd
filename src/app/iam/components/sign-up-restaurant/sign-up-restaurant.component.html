@@ -5,48 +5,48 @@
     <h1>Enter the information of <br>your restaurant</h1>
     <div class="form-group">
       <div class="input-row">
-        <div>
-          <label class="input-small" for="name">Name</label>
-          <input type="text" id="name" placeholder="Name" v-model="name" />
+        <div class="input-container">
+          <label class="input-label" for="name">Name</label>
+          <input class="input-field input-small" type="text" id="name" placeholder="Name" [(ngModel)]="name" />
         </div>
-        <div>
-          <label class="input-small" for="lastNames">Last Names</label>
-          <input type="text" id="lastNames" placeholder="Last Names" v-model="lastNames" />
+        <div class="input-container">
+          <label class="input-label" for="lastNames">Last Names</label>
+          <input class="input-field input-small" type="text" id="lastNames" placeholder="Last Names" [(ngModel)]="lastNames" />
         </div>
       </div>
       <div class="input-row">
-        <div>
-          <label class="input-small" for="restaurantName">Restaurant Name</label>
-          <input type="text" id="restaurantName" placeholder="Restaurant Name" v-model="restaurantName" />
+        <div class="input-container">
+          <label class="input-label" for="restaurantName">Restaurant Name</label>
+          <input class="input-field input-small" type="text" id="restaurantName" placeholder="Restaurant Name" [(ngModel)]="restaurantName" />
         </div>
-        <div>
-          <label class="input-small" for="telephoneNumber">Telephone Number</label>
-          <input type="text" id="telephoneNumber" placeholder="Telephone Number" v-model="telephoneNumber" />
+        <div class="input-container">
+          <label class="input-label" for="telephoneNumber">Telephone Number</label>
+          <input class="input-field input-small" type="text" id="telephoneNumber" placeholder="Telephone Number" [(ngModel)]="telephoneNumber" />
         </div>
       </div>
-      <div>
-        <label for="address">Address</label>
-        <input type="text" id="address" placeholder="Address" v-model="address" />
+      <div class="input-container">
+        <label class="input-label" for="address">Address</label>
+        <input class="input-field" type="text" id="address" placeholder="Address" [(ngModel)]="address" />
       </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Email" v-model="email" />
+      <div class="input-container">
+        <label class="input-label" for="email">Email</label>
+        <input class="input-field" type="email" id="email" placeholder="Email" [(ngModel)]="email" />
       </div>
-      <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Password" v-model="password" />
+      <div class="input-container">
+        <label class="input-label" for="password">Password</label>
+        <input class="input-field" type="password" id="password" placeholder="Password" [(ngModel)]="password" />
       </div>
       <div class="input-row">
-        <div class="input-small">
-          <label for="dni">DNI</label>
-          <input type="text" id="dni" placeholder="DNI" v-model="dni" />
+        <div class="input-container">
+          <label class="input-label" for="dni">DNI</label>
+          <input class="input-field input-small" type="text" id="dni" placeholder="DNI" [(ngModel)]="dni" />
         </div>
-        <div class="input-small">
-          <label for="ruc">RUC</label>
-          <input type="text" id="ruc" placeholder="RUC" v-model="ruc" />
+        <div class="input-container">
+          <label class="input-label" for="ruc">RUC</label>
+          <input class="input-field input-small" type="text" id="ruc" placeholder="RUC" [(ngModel)]="ruc" />
         </div>
       </div>
-      <button (click)="goToPayment()" class="submit-button">Continue</button>
+      <button (click)="goToPlanRestaurant()" class="submit-button">Continue</button>
     </div>
   </div>
 </div>

@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 520px;
+  margin-left: 420px;
 }
 
 .register-section h1 {
@@ -26,31 +26,33 @@
 
 .input-row {
   display: flex;
-  justify-content: space-between;
   gap: 50px;
 }
 
-input {
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-field {
   padding: 12px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 100%;
-  margin-bottom: 5px;
+  width: 70%;
 }
 
 .input-small {
-  min-width: 190px;
+  min-width: 262px;
 }
 
-label {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
-}
-
-button.submit-button {
+.submit-button {
   background-color: #ff6f3f;
   color: white;
   padding: 15px;
@@ -61,9 +63,9 @@ button.submit-button {
   cursor: pointer;
   text-align: center;
   margin-top: 20px;
-  width: 105%;
+  width: 74%;
 }
 
-button.submit-button:hover {
+.submit-button:hover {
   background-color: #e65b30;
 }

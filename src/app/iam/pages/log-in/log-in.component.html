@@ -1,4 +1,4 @@
-<div class="login-page">
+<div class="login-page login-container">
   <app-auth-background></app-auth-background>
 
   <div class="login-section">
@@ -12,7 +12,7 @@
         <label for="password">Password</label>
         <input type="password" id="password" placeholder="Enter your password" required />
       </div>
-      <a  class="forgot-password" (click)="goToRecoverPassword()">Forgot your password?</a>
+      <a class="forgot-password" (click)="goToRecoverPassword()">Forgot your password?</a>
       <button type="submit" class="login-button" (click)="goToHome()">Log in</button>
       <p>Don’t have an account? <a (click)="goToSignUp()">Create it now.</a></p>
     </form>
