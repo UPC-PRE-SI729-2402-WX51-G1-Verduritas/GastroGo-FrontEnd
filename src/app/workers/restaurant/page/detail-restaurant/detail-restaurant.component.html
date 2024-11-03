@@ -1,0 +1,49 @@
+<div class="conteiner-navigator-view">
+  <app-side-navigator-bar></app-side-navigator-bar>
+<div class="restaurant-container">
+  <!-- Restaurant Information -->
+  <div class="restaurant-info">
+    <img src="assets/images/Palm_&_Vine.png" alt="Restaurant Image" class="restaurant-image" />
+    <div class="restaurant-details">
+      <h2>Ochi</h2>
+      <p><strong>Address:</strong> Santiago de Surco, El Polo, 101</p>
+      <p><strong>Schedule:</strong> 12:00 - 18:00</p>
+      <p><strong>Status:</strong> Open</p>
+      <p><strong>Rating:</strong>
+        <mat-icon class="rating-star">star</mat-icon>
+        <mat-icon class="rating-star">star</mat-icon>
+        <mat-icon class="rating-star">star</mat-icon>
+        <mat-icon class="rating-star">star</mat-icon>
+        <mat-icon class="rating-star">star</mat-icon>
+      </p>
+      <button class="menu-button" [routerLink]="['/menu']">see menu</button>
+    </div>
+  </div>
+
+  <!-- Comments Section -->
+  <div class="comments-section">
+    <h3>Comments</h3>
+    <div class="comment">
+      <div class="user-icon">👤</div>
+      <div class="comment-content">
+        <strong>Lily E.</strong>
+        <p>Didn't convince me a lot. I wasn’t that bad but it could be better.</p>
+      </div>
+    </div>
+    <div class="comment">
+      <div class="user-icon">👤</div>
+      <div class="comment-content">
+        <strong>Maria M.</strong>
+        <p>I want to have more meals from here, it was just so delicious.</p>
+      </div>
+    </div>
+    <div class="comment">
+      <div class="user-icon">👤</div>
+      <div class="comment-content">
+        <strong>José L.</strong>
+        <p>Want to order again already. It was a great meal!</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

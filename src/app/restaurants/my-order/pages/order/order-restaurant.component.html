@@ -1,0 +1,46 @@
+<div class="main-container">
+<app-side-navigator-bar-restaurants></app-side-navigator-bar-restaurants>
+  <div class="orders-container">
+    <div class="header-container">
+      <div class="header">
+        <h3 class="orders-title">Orders</h3>
+      </div>
+    </div>
+
+    <div class="orders-list">
+      <div class="order-card">
+        <mat-card appearance="outlined">
+          <div class="order-content">
+            <mat-icon class="order-icon">assignment</mat-icon>
+            <div class="info-container">
+              <p class="order-title">Order #0001</p>
+              <div class="details-container">
+                <p><strong>Restaurant:</strong> Ochi</p>
+                <p><strong>Status:</strong> In Process</p>
+                <p><strong>Date:</strong> 08/10/2024</p>
+              </div>
+              <a class="read-more-button" [routerLink]="['/order-details-restaurant']">See details</a>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+      <div class="order-card">
+        <mat-card appearance="outlined">
+          <div class="order-content">
+            <mat-icon class="order-icon">assignment</mat-icon>
+            <div class="info-container">
+              <p class="order-title">Order #0002</p>
+              <div class="details-container">
+                <p><strong>Restaurant:</strong> La Mar</p>
+                <p><strong>Status:</strong> In Process</p>
+                <p><strong>Date:</strong> 08/10/2024</p>
+              </div>
+              <a class="read-more-button" [routerLink]="['/order-details-restaurant']">See details</a>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+<div class="conteiner-navigator-view">
+<app-side-navigator-bar></app-side-navigator-bar>
+  <div class="profile-container">
+
+      <div class="profile-form-container">
+
+        <div class="container-son">
+          <div class="tittle">
+            <h2>Order Details</h2>
+            <p>Check the details of your order or cancel it</p>
+          </div>
+          <div class="white-rectangle">
+            <div class="left-section">
+              <h3>Restaurant: Ochi</h3>
+              <p>Date: 08/10/2024</p>
+              <p>Delivery Time: 14:00</p>
+            </div>
+            <div class="right-section">
+              <p>Order Id: #00000001</p>
+              <p>Status: In process</p>
+              <a href="/order-tracker">Check the tracker</a>
+            </div>
+          </div>
+          <div class="white-rectangle">
+            <div class="menu-section">
+              <h3>Appetizers</h3>
+              <div class="menu-itemH">
+                <p>Edamame</p>
+                <input type="text" value="20" />
+                <p>Gyozas</p>
+                <input type="text" value="05" />
+              </div>
+              <h3>Main Dishes</h3>
+              <div class="menu-itemH">
+                <p>Sushi Nigiri</p>
+                <input type="text" value="21" />
+                <p>Ramen de Cerdo</p>
+                <input type="text" value="04" />
+              </div>
+              <h3>Drinks</h3>
+              <div class="menu-itemH">
+                <p>Sake</p>
+                <input type="text" value="05" />
+                <p>Té Verde</p>
+                <input type="text" value="20" />
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+
+              <button class="read-more-button" [routerLink]="['/order']">Go Back To Orders</button>
+              <button class="read-more-button" (click)="cancelButton=true">Cancel Order</button>
+              <div *ngIf="cancelButton" class="modal-overlay">
+                <div class="modal">
+                  <h2>Are you sure you want to cancel the order?</h2>
+                  <p>We will notify the client about the matter so they have time to re-order.</p>
+                  <button class="modal-button" [routerLink]="['/order']">Accept</button>
+                  <button class="modal-button" [routerLink]="['/order']">Cancel</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>

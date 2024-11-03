@@ -1,0 +1,102 @@
+<div class="conteiner-navigator-view">
+  <app-side-navigator-bar></app-side-navigator-bar>
+<div class="profile-container">
+  <div class="profile-header">
+    <h2>Profile</h2>
+  </div>
+
+  <div class="profile-form-container">
+    <div class="profile-form">
+
+      <div class="name-last-name">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" value="Lucas" />
+        </div>
+
+        <div class="form-group">
+          <label for="last-names">Last Names</label>
+          <input type="text" id="last-names" value="Fernandez" />
+        </div>
+      </div>
+
+      <div class="name-last-name">
+        <div class="form-group">
+          <label for="phone">Telephone Number</label>
+          <input type="text" id="phone" value="999888777" />
+        </div>
+
+        <div class="form-group">
+          <label for="dni">DNI</label>
+          <input type="text" id="dni" value="45789642" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" value="Santiago de Surco, El Derby, 408" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" value="lucasf@gmail.com" />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Change Password</label>
+        <input type="password" id="password" placeholder="Enter your new password" />
+      </div>
+
+      <button class="save-button">Save</button>
+    </div>
+
+    <div class="space-form-suscription">
+    </div>
+    <div class="left-boxes">
+
+      <div class="subscription-box">
+        <div class="conteiner-subscription-title">
+          <h3>Your subscription</h3>
+        </div>
+        <div class="subscription-details">
+
+          <div class="subs-team-paid">
+            <p>Big Team</p>
+            <p>S/. 200 monthly</p>
+          </div>
+
+          <div class="payment-options">
+            <div class="option">
+              <input type="checkbox" id="monthly-payment" checked />
+              <label for="monthly-payment">Automatic Monthly Payment</label>
+            </div>
+
+            <div class="option">
+              <input type="checkbox" id="annual-payment" />
+              <label for="annual-payment">Automatic Annual Payment</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subscription-box">
+        <div class="conteiner-subscription-title">
+          <h3>Payment method</h3>
+        </div>
+        <div class="subscription-details">
+
+          <div class="info-payment">
+            <p>Credit/Debit Card</p>
+            <p>XXXX-XXXX-XXXX-6789</p>
+            <p>Expiration Date</p>
+            <p>07/30</p>
+          </div>
+          <button [routerLink]="['/payment-method']">Add Method</button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>

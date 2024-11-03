@@ -1,0 +1,42 @@
+<div class="login-page">
+  <app-auth-background></app-auth-background>
+
+  <div class="register-section">
+    <h1>Enter your information</h1>
+    <div class="form-group">
+      <div class="input-row">
+        <div class="input-container">
+          <label class="input-label" for="name">Name</label>
+          <input class="input-field input-small" type="text" id="name" placeholder="Name" [(ngModel)]="name" />
+        </div>
+        <div class="input-container">
+          <label class="input-label" for="lastNames">Last Names</label>
+          <input class="input-field input-small" type="text" id="lastNames" placeholder="Last Names" [(ngModel)]="lastNames" />
+        </div>
+      </div>
+      <div class="input-row">
+        <div class="input-container">
+          <label class="input-label" for="telephoneNumber">Telephone Number</label>
+          <input class="input-field input-small" type="text" id="telephoneNumber" placeholder="Telephone Number" [(ngModel)]="telephoneNumber" />
+        </div>
+        <div class="input-container">
+          <label class="input-label" for="dni">DNI</label>
+          <input class="input-field input-small" type="text" id="dni" placeholder="DNI" [(ngModel)]="dni" />
+        </div>
+      </div>
+      <div class="input-container">
+        <label class="input-label" for="address">Address</label>
+        <input class="input-field" type="text" id="address" placeholder="Address" [(ngModel)]="address" />
+      </div>
+      <div class="input-container">
+        <label class="input-label" for="email">Email</label>
+        <input class="input-field" type="email" id="email" placeholder="Email" [(ngModel)]="email" />
+      </div>
+      <div class="input-container">
+        <label class="input-label" for="password">Password</label>
+        <input class="input-field" type="password" id="password" placeholder="Password" [(ngModel)]="password" />
+      </div>
+      <button (click)="goToPlanWorker()" class="submit-button">Continue</button>
+    </div>
+  </div>
+</div>

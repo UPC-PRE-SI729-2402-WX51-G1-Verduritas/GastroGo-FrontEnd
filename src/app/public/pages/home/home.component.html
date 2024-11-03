@@ -1,0 +1,116 @@
+<div class="main-container">
+  <app-side-navigator-bar></app-side-navigator-bar>
+  <div class="recent-restaurants-container">
+    <div class="header-container">
+      <div class="header">
+        <h3 class="recent-restaurants-title">Recent Restaurants</h3>
+        <mat-icon class="chevron-icon">chevron_right</mat-icon>
+      </div>
+    </div>
+
+    <div class="restaurants-list">
+      <div class="restaurant-card">
+        <mat-card appearance="outlined">
+          <div class="card-content">
+            <div class="image-container">
+              <img src="assets/images/La_Mar.png" alt="Restaurant Image"/>
+            </div>
+
+            <div class="info-container">
+              <p class="restaurant-title">La Mar</p>
+              <div class="details-container">
+                <p><strong>Address:</strong> Santiago de Surco</p>
+                <p><strong>Schedule:</strong> 12:00 - 18:00</p>
+                <p><strong class="rating-label">Rating:</strong>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                </p>
+              </div>
+              <button mat-button class="read-more-button" ><p>Read more</p></button>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+      <div class="restaurant-card">
+        <mat-card appearance="outlined">
+          <div class="card-content">
+            <div class="image-container">
+              <img src="assets/images/Palm_&_Vine.png" alt="Restaurant Image"/>
+            </div>
+            <div class="info-container">
+              <p class="restaurant-title">Palm & Vine</p>
+              <div class="details-container">
+                <p><strong>Address:</strong> Santiago de Surco</p>
+                <p><strong>Schedule:</strong> 12:00 - 18:00</p>
+                <p><strong class="rating-label">Rating:</strong>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                  <mat-icon class="rating-star">star</mat-icon>
+                </p>
+              </div>
+              <button mat-button class="read-more-button"><p>Read more</p></button>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  <div class="recent-orders-container">
+    <div class="header-container-recent-order">
+      <div class="header">
+        <h3 class="recent-orders-title">Recent Orders</h3>
+        <mat-icon class="chevron-icon">chevron_right</mat-icon>
+      </div>
+    </div>
+    <div class="orders-list">
+      <!-- Order #0001 -->
+      <div class="order-card">
+        <mat-card appearance="outlined">
+          <div class="order-content">
+            <mat-icon class="order-icon">assignment</mat-icon>
+            <div class="order-info">
+              <p class="order-title"><strong>Order #0001</strong></p>
+              <p>Status: <strong class="status-text">Sent</strong></p>
+              <p>Restaurant: <strong>La Mar</strong></p>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+      <!-- Order #0002 -->
+      <div class="order-card">
+        <mat-card appearance="outlined">
+          <div class="order-content">
+            <mat-icon class="order-icon">assignment</mat-icon>
+            <div class="order-info">
+              <p class="order-title"><strong>Order #0002</strong></p>
+              <p>Status: <strong class="status-text">Sent</strong></p>
+              <p>Restaurant: <strong>La Mar</strong></p>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+      <!-- Order #0003 -->
+      <div class="order-card">
+        <mat-card appearance="outlined">
+          <div class="order-content">
+            <mat-icon class="order-icon">assignment</mat-icon>
+            <div class="order-info">
+              <p class="order-title"><strong>Order #0003</strong></p>
+              <p>Status: <strong class="status-text not-sent">Not Sent</strong></p>
+              <p>Restaurant: <strong>La Mar</strong></p>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+    </div>
+  </div>
+</div>

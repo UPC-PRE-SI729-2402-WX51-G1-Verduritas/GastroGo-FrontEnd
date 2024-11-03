@@ -1,0 +1,15 @@
+.home {
+  padding: 20px;
+  margin-left: 100px;
+  background-color: #ffe9e2;
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-width: 1100px;
+}
+
+.home-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}

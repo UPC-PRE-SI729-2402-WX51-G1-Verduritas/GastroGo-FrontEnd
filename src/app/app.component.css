@@ -1,12 +1,6 @@
 .main-layout {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
   background-color: #FAEAE7;
 
 }
 
-app-side-navigator-bar {
-  flex: 0 0 auto;
-}
 

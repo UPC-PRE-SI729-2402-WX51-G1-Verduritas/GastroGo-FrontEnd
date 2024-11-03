@@ -1,0 +1,37 @@
+<div class="login-page">
+  <app-auth-background></app-auth-background>
+
+  <div class="register-section">
+    <h1>Payment: Credit/Debit Card</h1>
+    <div class="form-group">
+      <div class="input-row">
+        <div class="input-container">
+          <label class="input-label input-small" for="name">Name</label>
+          <input class="input-field input-small" type="text" id="name" placeholder="Name" />
+        </div>
+        <div class="input-container">
+          <label class="input-label input-small" for="lastNames">Last Names</label>
+          <input class="input-field input-small" type="text" id="lastNames" placeholder="Last Names" />
+        </div>
+      </div>
+
+      <div class="input-container">
+        <label class="input-label" for="card-number">Card Number</label>
+        <input class="input-field" type="text" id="card-number" placeholder="Card Number" />
+      </div>
+
+      <div class="input-row">
+        <div class="input-container">
+          <label class="input-label input-small" for="expiry-date">Expiry Date</label>
+          <input class="input-field input-small" type="text" id="expiry-date" placeholder="Expiry Date" />
+        </div>
+        <div class="input-container">
+          <label class="input-label input-small" for="ccv">CCV</label>
+          <input class="input-field input-small" type="text" id="ccv" placeholder="CCV" />
+        </div>
+      </div>
+
+      <button class="submit-button" (click)="goToHome()">Continue in the app</button>
+    </div>
+  </div>
+</div>

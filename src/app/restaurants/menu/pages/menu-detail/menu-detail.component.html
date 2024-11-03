@@ -1,0 +1,43 @@
+<div class="conteiner-navigator-view">
+  <app-side-navigator-bar-restaurants></app-side-navigator-bar-restaurants>
+  <div class="menu-detail-container">
+  <h2>Menus</h2>
+  <div class="menu-detail-container-sub">
+
+  <div class="menu-detail-card">
+    <h3>Menu #{{ menu.id }}</h3>
+
+    <div class="section">
+      <h4>Appetizers</h4>
+      <div class="item">
+        <span>Edamame</span><input type="text" value="23" readonly />
+        <span>Gyozas</span><input type="text" value="20" readonly />
+      </div>
+    </div>
+
+    <div class="section">
+      <h4>Main Dishes</h4>
+      <div class="item">
+        <span>Sushi Nigiri</span><input type="text" value="42" readonly />
+        <span>Ramen de Cerdo</span><input type="text" value="21" readonly />
+      </div>
+    </div>
+
+    <div class="section">
+      <h4>Drinks</h4>
+      <div class="item">
+        <span>Sake</span><input type="text" value="30" readonly />
+        <span>Te Verde (Matcha)</span><input type="text" value="05" readonly />
+      </div>
+    </div>
+
+    <div class="section price">
+      <h4>Price</h4>
+      <input type="text" value="16" readonly /> soles
+    </div>
+
+  </div>
+    <button class="back-button" [routerLink]="['/menu-list']">Go back to Menus</button>
+</div>
+</div>
+</div>

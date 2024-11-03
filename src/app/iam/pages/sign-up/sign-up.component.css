@@ -1,0 +1,85 @@
+.sign-up-page {
+  display: flex;
+  height: 100vh;
+}
+
+.section-signup {
+  flex: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 500px;
+  margin-left: 1100px;
+  margin-top:270px;
+
+}
+
+.section-signup h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.option-button {
+  width: 470px;
+  max-width: 470px;
+  padding: 15px;
+  background-color: #fff;
+  color: black;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.option-button:hover {
+  color: black;
+}
+
+.option-group p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  max-width: 550px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .section-signup {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .option-button {
+    width: 100%;
+  }
+
+  .section-signup h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-signup h1 {
+    font-size: 24px;
+  }
+
+  .option-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .option-group p {
+    font-size: 12px;
+  }
+}

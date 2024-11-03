@@ -1,0 +1,39 @@
+<div class="conteiner-navigator-view">
+  <app-side-navigator-bar></app-side-navigator-bar>
+<div class="payment-container">
+  <h2>Payment Method</h2>
+  <div class="payment-form">
+    <h3>Payment: Credit/Debit Card</h3>
+    <form>
+      <div class="name-and-lastname">
+        <div class="form-group">
+          <label for="firstName">Name</label>
+          <input type="text" id="firstName" placeholder="First Name">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" placeholder="Last Name">
+        </div>
+      </div>
+      <div class="form-group-number">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" placeholder="Card Number">
+      </div>
+      <div class="name-and-lastname">
+        <div class="form-group">
+          <label for="expiryDate">Expiry Date</label>
+          <input type="text" id="expiryDate" placeholder="MM/YY">
+        </div>
+        <div class="form-group">
+          <label for="ccv">CCV</label>
+          <input type="text" id="ccv" placeholder="CCV">
+        </div>
+      </div>
+      <button type="button" class="confirm-button" (click)="confirmPayment()">Confirm</button>
+    </form>
+  </div>
+</div>
+</div>
+
+<!-- Componente modal -->
+<app-payment-method-added *ngIf="showModal" (close)="closeModal()"></app-payment-method-added>
